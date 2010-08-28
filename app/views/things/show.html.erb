@@ -1,0 +1,18 @@
+<p>
+  <b>Title:</b>
+  <%=h @thing.title %>
+</p>
+
+<p>
+  <b>Body:</b>
+  <%=h @thing.body %>
+</p>
+
+<p>
+  <b>Pending:</b>
+  <%=h @thing.pending %>
+</p>
+
+
+<%= link_to 'Edit', edit_thing_path(@thing) %> |
+<%= link_to 'Back', things_path %>

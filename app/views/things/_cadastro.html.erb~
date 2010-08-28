@@ -1,0 +1,24 @@
+<h1>:acao thing</h1>
+
+<% form_for(@thing) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </p>
+  <p>
+    <%= f.label :body %><br />
+    <%= f.text_field :body %>
+  </p>
+  <p>
+    <%= f.label :pending %><br />
+    <%= f.check_box :pending %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @thing %> |
+<%= link_to 'Back', things_path %>

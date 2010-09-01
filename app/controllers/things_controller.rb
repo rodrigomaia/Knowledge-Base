@@ -40,7 +40,7 @@ class ThingsController < ApplicationController
 
     respond_to do |format|
       if @thing.save
-        format.html { redirect_to(@thing, :notice => 'Thing was successfully created.') }
+        format.html { redirect_to(things_url, :notice => 'Thing was successfully created.') }
         format.xml  { render :xml => @thing, :status => :created, :location => @thing }
       else
         format.html { render :action => "new" }
@@ -56,7 +56,7 @@ class ThingsController < ApplicationController
 
     respond_to do |format|
       if @thing.update_attributes(params[:thing])
-        format.html { redirect_to(@thing, :notice => 'Thing was successfully updated.') }
+        format.html { redirect_to(things_url, :notice => 'Thing was successfully updated.') }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }

@@ -1,30 +1,13 @@
 
 <h1>things</h1>
 
-<% @things.each do |thing| %>
+<% @things.each do |@thing| %>
 
 <div class="caixa" id='divcaixa'>
 	<div class="caixaacima" id='divcaixaacima'> 
-		<div class="caixaabaixo" id=<%="div#{thing.id}"%> > 
+		<div class="caixaabaixo" id=<%="div#{@thing.id}"%> > 
 
-			<%=h thing.title %> 
-	    <br />
-	    <% 
-	    if thing.pending     
-	    	imagem_check = 'unchecked'
-	    else
-	    	imagem_check = 'checked'
-	    end 
-	    %>
-	  
-	    <%= link_to_remote image_tag(imagem_check+'.gif'), :update => "div#{thing.id}", :url =>{ :action => :check, :id => thing.id } %>
-	    <br />
-	    <%=h thing.body %>
-	    <br />
-	    <%= link_to image_tag('edit.gif'), edit_thing_path(thing) %>
-	    <%= link_to image_tag('delete.gif'), thing, :confirm => 'Are you sure?', :method => :delete %>
-	  
-	    <br />
+			<%= render :partial => 'item', :locals =>{:thing => @thing} %>
 	    
 	  </div>
   </div>

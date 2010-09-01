@@ -1,5 +1,5 @@
 	
-	<%=h @thing.title %> 
+	<%= @thing.title %> 
 	<br />
 	<% 
 	if @thing.pending     
@@ -11,10 +11,10 @@
 	
 	<%= link_to_remote image_tag(imagem_check+'.gif'), :update => "div#{@thing.id}", :url =>{ :action => :check, :id => @thing.id } %>
 	<br />
-	<%=h @thing.body %>
+	<%= @thing.body %>
 	<br />
 	
 	
 	<%= link_to image_tag('edit.gif'), edit_thing_path(@thing) %>
-	<%= link_to image_tag('delete.gif'), @thing, :confirm => 'Are you sure?', :method => :delete %>
+	<%= link_to image_tag('delete.gif'), @thing, :confirm => 'Confirma?', :method => :delete %>
 	<br />

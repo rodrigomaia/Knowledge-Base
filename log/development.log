@@ -722,3 +722,2744 @@ Processing ThingsController#index (for 127.0.0.1 at 2010-08-27 21:27:44) [GET]
 Rendering template within layouts/application
 Rendering things/index
 Completed in 15ms (View: 7, DB: 1) | 200 OK [http://localhost/things]
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-27 21:43:59) [GET]
+  [4;36;1mThing Load (1.0ms)[0m   [0;1mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Completed in 29ms (View: 22, DB: 1) | 200 OK [http://localhost/things]
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-27 21:45:21) [GET]
+  [4;35;1mThing Load (0.0ms)[0m   [0mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Completed in 19ms (View: 12, DB: 0) | 200 OK [http://localhost/things]
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-27 22:02:54) [GET]
+  [4;36;1mThing Load (0.0ms)[0m   [0;1mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+
+ActionView::TemplateError (can't convert Symbol into String) on line #14 of app/views/things/index.html.erb:
+11:     
+12:   <tr>
+13:     <td><%= link_to 'Show', thing %></td>
+14:     <td><%= link_to_remote image_tag('edit.gif'), edit_thing_path(thing) %></td>
+15:     <%= link_to_remote image_tag('delete.gif'), :url => thing_path(thing), :confirm => 'Are you sure?', :method => :delete %></td>
+16:   </tr>
+17: </table>  
+
+    app/views/things/index.html.erb:14
+    app/views/things/index.html.erb:3:in `each'
+    app/views/things/index.html.erb:3
+    app/controllers/things_controller.rb:7:in `index'
+
+Rendered rescues/_trace (44.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-27 22:03:11) [GET]
+  [4;35;1mThing Load (0.0ms)[0m   [0mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Completed in 18ms (View: 12, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 18:35:38) [GET]
+  [4;36;1mThing Load (1.0ms)[0m   [0;1mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Completed in 5194ms (View: 5186, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ThingsController#new (for 127.0.0.1 at 2010-08-31 18:35:55) [GET]
+Rendering template within layouts/application
+Rendering things/new
+Rendered things/_cadastro (11.0ms)
+Completed in 31ms (View: 24, DB: 0) | 200 OK [http://localhost/things/new]
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 18:35:59) [GET]
+  [4;35;1mThing Load (0.0ms)[0m   [0mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Completed in 13ms (View: 7, DB: 0) | 200 OK [http://localhost/things]
+
+
+Processing ThingsController#show (for 127.0.0.1 at 2010-08-31 18:36:05) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mThing Load (0.0ms)[0m   [0;1mSELECT * FROM "things" WHERE ("things"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering things/show
+Completed in 15ms (View: 7, DB: 0) | 200 OK [http://localhost/things/1]
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 18:36:07) [GET]
+  [4;35;1mThing Load (1.0ms)[0m   [0mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Completed in 15ms (View: 7, DB: 1) | 200 OK [http://localhost/things]
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 18:36:46) [GET]
+  [4;36;1mThing Load (0.0ms)[0m   [0;1mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Completed in 19ms (View: 12, DB: 0) | 200 OK [http://localhost/things]
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 18:36:59) [GET]
+  [4;35;1mThing Load (0.0ms)[0m   [0mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Completed in 12ms (View: 6, DB: 0) | 200 OK [http://localhost/things]
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 18:38:00) [GET]
+  [4;36;1mThing Load (1.0ms)[0m   [0;1mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+ERROR: compiling _run_erb_app47views47things47index46html46erb RAISED compile error
+c:/Workspaces/workrails/KnowledgeBase/app/views/things/index.html.erb:14: syntax error, unexpected ',', expecting ')'
+...cat(( image_tag('delete.gif'), :url => thing_path(thing), :c...
+                              ^
+c:/Workspaces/workrails/KnowledgeBase/app/views/things/index.html.erb:14: syntax error, unexpected ',', expecting ')'
+...'), :url => thing_path(thing), :confirm => 'Are you sure?', ...
+                              ^
+c:/Workspaces/workrails/KnowledgeBase/app/views/things/index.html.erb:14: syntax error, unexpected ',', expecting ')'
+..., :confirm => 'Are you sure?', :method => :delete ).to_s); @...
+                              ^
+Function body:           def _run_erb_app47views47things47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<h1>things</h1>\n\n"
+
+;  @things.each do |thing| ; @output_buffer.concat "\n<table border=1>\n  <tr>\n    <td>"
+
+
+; @output_buffer.concat((h thing.title ).to_s); @output_buffer.concat "</td> <td> "; @output_buffer.concat((h thing.pending ).to_s); @output_buffer.concat " </td>\n  </tr>\n  <tr>\n    <td>"
+
+
+; @output_buffer.concat((h thing.body ).to_s); @output_buffer.concat "</td>\n  </tr>\n    \n  <tr>\n    <td>"
+
+
+
+; @output_buffer.concat(( link_to 'Edit', edit_thing_path(thing) ).to_s); @output_buffer.concat "</td>\n    "
+; @output_buffer.concat(( image_tag('delete.gif'), :url => thing_path(thing), :confirm => 'Are you sure?', :method => :delete ).to_s); @output_buffer.concat "</td>\n  </tr>\n</table>  \n\n"
+
+
+
+;  end ; @output_buffer.concat "\n\n\n<br />\n\n"
+
+
+
+
+; @output_buffer.concat(( link_to 'New thing', new_thing_path ).to_s); @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: c:/Workspaces/workrails/KnowledgeBase/app/views/things/index.html.erb:26:in `compile!'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/renderable.rb:61:in `compile'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/renderable.rb:28:in `render'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/template.rb:205:in `render_template'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:265:in `render'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:348:in `_render_with_layout'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:262:in `render'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1250:in `render_for_file'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:942:in `render_without_benchmark'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:51:in `render'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Ruby187/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:51:in `render'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:135:in `send'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:135
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:179:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:179:in `respond'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:173:in `each'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:173:in `respond'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:107:in `respond_to'
+c:/Workspaces/workrails/KnowledgeBase/app/controllers/things_controller.rb:7:in `index'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1331:in `send'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1331:in `perform_action_without_filters'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:617:in `call_filters'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Ruby187/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/flash.rb:151:in `perform_action'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `send'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `process_without_filters'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:606:in `process'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:391:in `process'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:386:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/routing/route_set.rb:438:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:87:in `dispatch'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:121:in `_call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:130
+C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:9:in `cache'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:28:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/string_coercion.rb:25:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/head.rb:9:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/params_parser.rb:15:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/session/cookie_store.rb:99:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/failsafe.rb:26:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `synchronize'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:114:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/reloader.rb:34:in `run'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:108:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/rails/rack/static.rb:31:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:47:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `each'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/rails/rack/log_tailer.rb:17:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/chunked.rb:15:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/handler/mongrel.rb:67:in `process'
+C:/Ruby187/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:159:in `process_client'
+C:/Ruby187/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:158:in `each'
+C:/Ruby187/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:158:in `process_client'
+C:/Ruby187/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+C:/Ruby187/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `initialize'
+C:/Ruby187/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `new'
+C:/Ruby187/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+C:/Ruby187/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `initialize'
+C:/Ruby187/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `new'
+C:/Ruby187/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `run'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/handler/mongrel.rb:38:in `run'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/commands/server.rb:111
+C:/Ruby187/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+C:/Ruby187/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+c:/Workspaces/workrails/KnowledgeBase/app/views/things/index.html.erb:14: syntax error, unexpected ',', expecting ')'
+...cat(( image_tag('delete.gif'), :url => thing_path(thing), :c...
+                              ^
+c:/Workspaces/workrails/KnowledgeBase/app/views/things/index.html.erb:14: syntax error, unexpected ',', expecting ')'
+...'), :url => thing_path(thing), :confirm => 'Are you sure?', ...
+                              ^
+c:/Workspaces/workrails/KnowledgeBase/app/views/things/index.html.erb:14: syntax error, unexpected ',', expecting ')'
+..., :confirm => 'Are you sure?', :method => :delete ).to_s); @...
+                              ^) on line #14 of app/views/things/index.html.erb:
+11:     
+12:   <tr>
+13:     <td><%= link_to 'Edit', edit_thing_path(thing) %></td>
+14:     <%= image_tag('delete.gif'), :url => thing_path(thing), :confirm => 'Are you sure?', :method => :delete %></td>
+15:   </tr>
+16: </table>  
+17: 
+
+    app/views/things/index.html.erb:26:in `compile!'
+    app/controllers/things_controller.rb:7:in `index'
+
+Rendered rescues/_trace (89.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 18:39:07) [GET]
+  [4;35;1mThing Load (1.0ms)[0m   [0mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Completed in 19ms (View: 9, DB: 1) | 200 OK [http://localhost/things]
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 18:39:09) [GET]
+  Parameters: {"confirm"=>"Are you sure?", "method"=>"delete", "url"=>"/things/2"}
+  [4;36;1mThing Load (1.0ms)[0m   [0;1mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Completed in 14ms (View: 5, DB: 1) | 200 OK [http://localhost/things?confirm=Are+you+sure%3F&method=delete&url=%2Fthings%2F2]
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 18:39:13) [GET]
+  Parameters: {"confirm"=>"Are you sure?", "method"=>"delete", "url"=>"/things/2"}
+  [4;35;1mThing Load (1.0ms)[0m   [0mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Completed in 13ms (View: 5, DB: 1) | 200 OK [http://localhost/things?confirm=Are+you+sure%3F&method=delete&url=%2Fthings%2F2]
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 18:39:20) [GET]
+  [4;36;1mThing Load (1.0ms)[0m   [0;1mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Completed in 11ms (View: 5, DB: 1) | 200 OK [http://localhost/things]
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 18:39:25) [GET]
+  Parameters: {"confirm"=>"Are you sure?", "method"=>"delete", "url"=>"/things/1"}
+  [4;35;1mThing Load (1.0ms)[0m   [0mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Completed in 12ms (View: 5, DB: 1) | 200 OK [http://localhost/things?confirm=Are+you+sure%3F&method=delete&url=%2Fthings%2F1]
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 18:40:40) [GET]
+  Parameters: {"confirm"=>"Are you sure?", "method"=>"delete", "url"=>"/things/1"}
+  [4;36;1mThing Load (1.0ms)[0m   [0;1mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+ERROR: compiling _run_erb_app47views47things47index46html46erb RAISED compile error
+c:/Workspaces/workrails/KnowledgeBase/app/views/things/index.html.erb:13: syntax error, unexpected ','
+...ink_to image_tag('edit.gif'),, edit_thing_path(thing) ).to_s...
+                              ^
+Function body:           def _run_erb_app47views47things47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<h1>things</h1>\n\n"
+
+;  @things.each do |thing| ; @output_buffer.concat "\n<table border=1>\n  <tr>\n    <td>"
+
+
+; @output_buffer.concat((h thing.title ).to_s); @output_buffer.concat "</td> <td> "; @output_buffer.concat((h thing.pending ).to_s); @output_buffer.concat " </td>\n  </tr>\n  <tr>\n    <td>"
+
+
+; @output_buffer.concat((h thing.body ).to_s); @output_buffer.concat "</td>\n  </tr>\n    \n  <tr>\n    <td>"
+
+
+
+; @output_buffer.concat(( link_to image_tag('edit.gif'),, edit_thing_path(thing) ).to_s); @output_buffer.concat "</td>\n    "
+; @output_buffer.concat(( link_to image_tag('delete.gif'), :url => thing_path(thing), :confirm => 'Are you sure?', :method => :delete ).to_s); @output_buffer.concat "</td>\n  </tr>\n</table>  \n\n"
+
+
+
+;  end ; @output_buffer.concat "\n\n\n<br />\n\n"
+
+
+
+
+; @output_buffer.concat(( link_to 'New thing', new_thing_path ).to_s); @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: c:/Workspaces/workrails/KnowledgeBase/app/views/things/index.html.erb:26:in `compile!'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/renderable.rb:61:in `compile'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/renderable.rb:28:in `render'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/template.rb:205:in `render_template'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:265:in `render'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:348:in `_render_with_layout'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:262:in `render'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1250:in `render_for_file'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:942:in `render_without_benchmark'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:51:in `render'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Ruby187/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:51:in `render'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:135:in `send'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:135
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:179:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:179:in `respond'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:173:in `each'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:173:in `respond'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:107:in `respond_to'
+c:/Workspaces/workrails/KnowledgeBase/app/controllers/things_controller.rb:7:in `index'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1331:in `send'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1331:in `perform_action_without_filters'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:617:in `call_filters'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Ruby187/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/flash.rb:151:in `perform_action'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `send'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `process_without_filters'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:606:in `process'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:391:in `process'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:386:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/routing/route_set.rb:438:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:87:in `dispatch'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:121:in `_call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:130
+C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:9:in `cache'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:28:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/string_coercion.rb:25:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/head.rb:9:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/params_parser.rb:15:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/session/cookie_store.rb:99:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/failsafe.rb:26:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `synchronize'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:114:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/reloader.rb:34:in `run'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:108:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/rails/rack/static.rb:31:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:47:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `each'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/rails/rack/log_tailer.rb:17:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/chunked.rb:15:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/handler/mongrel.rb:67:in `process'
+C:/Ruby187/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:159:in `process_client'
+C:/Ruby187/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:158:in `each'
+C:/Ruby187/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:158:in `process_client'
+C:/Ruby187/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+C:/Ruby187/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `initialize'
+C:/Ruby187/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `new'
+C:/Ruby187/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+C:/Ruby187/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `initialize'
+C:/Ruby187/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `new'
+C:/Ruby187/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `run'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/handler/mongrel.rb:38:in `run'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/commands/server.rb:111
+C:/Ruby187/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+C:/Ruby187/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+c:/Workspaces/workrails/KnowledgeBase/app/views/things/index.html.erb:13: syntax error, unexpected ','
+...ink_to image_tag('edit.gif'),, edit_thing_path(thing) ).to_s...
+                              ^) on line #13 of app/views/things/index.html.erb:
+10:   </tr>
+11:     
+12:   <tr>
+13:     <td><%= link_to image_tag('edit.gif'),, edit_thing_path(thing) %></td>
+14:     <%= link_to image_tag('delete.gif'), :url => thing_path(thing), :confirm => 'Are you sure?', :method => :delete %></td>
+15:   </tr>
+16: </table>  
+
+    app/views/things/index.html.erb:26:in `compile!'
+    app/controllers/things_controller.rb:7:in `index'
+
+Rendered rescues/_trace (89.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 18:40:59) [GET]
+  Parameters: {"confirm"=>"Are you sure?", "method"=>"delete", "url"=>"/things/1"}
+  [4;35;1mThing Load (1.0ms)[0m   [0mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Completed in 15ms (View: 9, DB: 1) | 200 OK [http://localhost/things?confirm=Are+you+sure%3F&method=delete&url=%2Fthings%2F1]
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 18:41:03) [GET]
+  [4;36;1mThing Load (0.0ms)[0m   [0;1mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Completed in 12ms (View: 6, DB: 0) | 200 OK [http://localhost/things]
+
+
+Processing ThingsController#edit (for 127.0.0.1 at 2010-08-31 18:41:05) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mThing Load (0.0ms)[0m   [0mSELECT * FROM "things" WHERE ("things"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering things/edit
+Rendered things/_cadastro (8.0ms)
+Completed in 55ms (View: 48, DB: 0) | 200 OK [http://localhost/things/1/edit]
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 18:41:14) [GET]
+  [4;36;1mThing Load (1.0ms)[0m   [0;1mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Completed in 20ms (View: 10, DB: 1) | 200 OK [http://localhost/things]
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 18:41:47) [GET]
+  [4;35;1mThing Load (0.0ms)[0m   [0mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+
+ActionView::TemplateError (undefined method `delete_thing_path' for #<ActionView::Base:0x710f6e8>) on line #14 of app/views/things/index.html.erb:
+11:     
+12:   <tr>
+13:     <td><%= link_to image_tag('edit.gif'), edit_thing_path(thing) %></td>
+14:     <%= link_to image_tag('delete.gif'), delete_thing_path(thing), :confirm => 'Are you sure?', :method => :delete %></td>
+15:   </tr>
+16: </table>  
+17: 
+
+    app/views/things/index.html.erb:14
+    app/views/things/index.html.erb:3:in `each'
+    app/views/things/index.html.erb:3
+    app/controllers/things_controller.rb:7:in `index'
+
+Rendered rescues/_trace (46.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 18:42:10) [GET]
+  [4;36;1mThing Load (1.0ms)[0m   [0;1mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Completed in 16ms (View: 9, DB: 1) | 200 OK [http://localhost/things]
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 18:42:12) [GET]
+  Parameters: {"method"=>"delete", "url"=>"/things/1"}
+  [4;35;1mThing Load (1.0ms)[0m   [0mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Completed in 14ms (View: 6, DB: 1) | 200 OK [http://localhost/things?method=delete&url=%2Fthings%2F1]
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 18:44:06) [GET]
+  Parameters: {"method"=>"delete", "url"=>"/things/1"}
+  [4;36;1mThing Load (1.0ms)[0m   [0;1mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Completed in 20ms (View: 11, DB: 1) | 200 OK [http://localhost/things?method=delete&url=%2Fthings%2F1]
+
+
+Processing ThingsController#destroy (for 127.0.0.1 at 2010-08-31 18:44:10) [DELETE]
+  Parameters: {"authenticity_token"=>"02mHUb/6fRGhWKjc0fLBcSrsajDe71KMTcpJ3+SGMfI=", "id"=>"2"}
+  [4;35;1mThing Load (0.0ms)[0m   [0mSELECT * FROM "things" WHERE ("things"."id" = 2) [0m
+  [4;36;1mThing Destroy (1.0ms)[0m   [0;1mDELETE FROM "things" WHERE "id" = 2[0m
+Redirected to http://localhost:3000/things
+Completed in 27ms (DB: 1) | 302 Found [http://localhost/things/2]
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 18:44:10) [GET]
+  [4;35;1mThing Load (1.0ms)[0m   [0mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Completed in 13ms (View: 7, DB: 1) | 200 OK [http://localhost/things]
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 18:49:30) [GET]
+  [4;36;1mThing Load (0.0ms)[0m   [0;1mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Completed in 19ms (View: 12, DB: 0) | 200 OK [http://localhost/things]
+
+
+Processing ThingsController#edit (for 127.0.0.1 at 2010-08-31 18:49:33) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mThing Load (0.0ms)[0m   [0mSELECT * FROM "things" WHERE ("things"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering things/edit
+Rendered things/_cadastro (9.0ms)
+Completed in 18ms (View: 11, DB: 0) | 200 OK [http://localhost/things/1/edit]
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 18:49:36) [GET]
+  [4;36;1mThing Load (1.0ms)[0m   [0;1mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Completed in 15ms (View: 7, DB: 1) | 200 OK [http://localhost/things]
+
+
+Processing ThingsController#edit (for 127.0.0.1 at 2010-08-31 18:49:39) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mThing Load (0.0ms)[0m   [0mSELECT * FROM "things" WHERE ("things"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering things/edit
+Rendered things/_cadastro (7.0ms)
+Completed in 15ms (View: 9, DB: 0) | 200 OK [http://localhost/things/1/edit]
+
+
+Processing ThingsController#update (for 127.0.0.1 at 2010-08-31 18:49:41) [PUT]
+  Parameters: {"commit"=>"Enviar", "authenticity_token"=>"02mHUb/6fRGhWKjc0fLBcSrsajDe71KMTcpJ3+SGMfI=", "id"=>"1", "thing"=>{"pending"=>"1", "body"=>"jogar projetos no repo é com push", "title"=>"git"}}
+  [4;36;1mThing Load (0.0ms)[0m   [0;1mSELECT * FROM "things" WHERE ("things"."id" = 1) [0m
+  [4;35;1mThing Update (1.0ms)[0m   [0mUPDATE "things" SET "updated_at" = '2010-08-31 21:49:41', "pending" = 't' WHERE "id" = 1[0m
+Redirected to http://localhost:3000/things/1
+Completed in 17ms (DB: 1) | 302 Found [http://localhost/things/1]
+
+
+Processing ThingsController#show (for 127.0.0.1 at 2010-08-31 18:49:42) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/application
+Rendering things/show
+
+ActionView::TemplateError (undefined method `title' for nil:NilClass) on line #3 of app/views/things/show.html.erb:
+1: <p>
+2:   <b>Title:</b>
+3:   <%=h @thing.title %>
+4: </p>
+5: 
+6: <p>
+
+    app/views/things/show.html.erb:3
+
+Rendered rescues/_trace (82.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 18:49:48) [GET]
+  [4;36;1mThing Load (1.0ms)[0m   [0;1mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Completed in 13ms (View: 6, DB: 1) | 200 OK [http://localhost/things/]
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 18:55:52) [GET]
+  [4;35;1mThing Load (1.0ms)[0m   [0mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Completed in 19ms (View: 12, DB: 1) | 200 OK [http://localhost/things/]
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 18:56:10) [GET]
+  [4;36;1mThing Load (1.0ms)[0m   [0;1mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Completed in 18ms (View: 11, DB: 1) | 200 OK [http://localhost/things/]
+
+
+Processing ThingsController#new (for 127.0.0.1 at 2010-08-31 18:56:16) [GET]
+Rendering template within layouts/application
+Rendering things/new
+Rendered things/_cadastro (7.0ms)
+Completed in 15ms (View: 8, DB: 0) | 200 OK [http://localhost/things/new]
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 18:56:18) [GET]
+  [4;35;1mThing Load (0.0ms)[0m   [0mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Completed in 18ms (View: 8, DB: 0) | 200 OK [http://localhost/things]
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 18:58:43) [GET]
+  [4;36;1mThing Load (1.0ms)[0m   [0;1mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Completed in 23ms (View: 12, DB: 1) | 200 OK [http://localhost/things]
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 18:58:47) [GET]
+  [4;35;1mThing Load (1.0ms)[0m   [0mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Completed in 12ms (View: 7, DB: 1) | 200 OK [http://localhost/things]
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 18:59:00) [GET]
+  [4;36;1mThing Load (1.0ms)[0m   [0;1mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Completed in 13ms (View: 6, DB: 1) | 200 OK [http://localhost/things]
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 19:00:20) [GET]
+  [4;35;1mThing Load (1.0ms)[0m   [0mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Completed in 65ms (View: 58, DB: 1) | 200 OK [http://localhost/things]
+
+
+Processing ThingsController#unchecked (for 127.0.0.1 at 2010-08-31 19:00:21) [POST]
+  Parameters: {"authenticity_token"=>"02mHUb/6fRGhWKjc0fLBcSrsajDe71KMTcpJ3+SGMfI=", "thing"=>"1", "_"=>""}
+
+NoMethodError (undefined method `stringify_keys!' for "1":String):
+  app/controllers/things_controller.rb:4:in `new'
+  app/controllers/things_controller.rb:4:in `unchecked'
+
+Rendered rescues/_trace (32.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 19:01:04) [GET]
+  [4;36;1mThing Load (0.0ms)[0m   [0;1mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Completed in 15ms (View: 8, DB: 0) | 200 OK [http://localhost/things]
+
+
+Processing ThingsController#unchecked (for 127.0.0.1 at 2010-08-31 19:01:06) [POST]
+  Parameters: {"authenticity_token"=>"02mHUb/6fRGhWKjc0fLBcSrsajDe71KMTcpJ3+SGMfI=", "thing"=>"1", "_"=>""}
+
+NoMethodError (undefined method `stringify_keys!' for "1":String):
+  app/controllers/things_controller.rb:4:in `new'
+  app/controllers/things_controller.rb:4:in `unchecked'
+
+Rendered rescues/_trace (32.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 19:01:33) [GET]
+  [4;35;1mThing Load (0.0ms)[0m   [0mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Completed in 17ms (View: 11, DB: 0) | 200 OK [http://localhost/things]
+
+
+Processing ThingsController#unchecked (for 127.0.0.1 at 2010-08-31 19:01:35) [POST]
+  Parameters: {"authenticity_token"=>"02mHUb/6fRGhWKjc0fLBcSrsajDe71KMTcpJ3+SGMfI=", "_"=>""}
+
+ActionView::MissingTemplate (Missing template things/unchecked.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ThingsController#new (for 127.0.0.1 at 2010-08-31 19:01:48) [GET]
+Rendering template within layouts/application
+Rendering things/new
+Rendered things/_cadastro (7.0ms)
+Completed in 15ms (View: 9, DB: 0) | 200 OK [http://localhost/things/new]
+
+
+Processing ThingsController#create (for 127.0.0.1 at 2010-08-31 19:02:24) [POST]
+  Parameters: {"commit"=>"Enviar", "authenticity_token"=>"02mHUb/6fRGhWKjc0fLBcSrsajDe71KMTcpJ3+SGMfI=", "thing"=>{"pending"=>"0", "body"=>"<%= javascript_include_tag \"prototype\" %>\r\n<%= link_to_remote image_tag('checked.gif'), :update => \"div1\", :url =>{ :action => :unchecked } %>", "title"=>"ajax on rails"}}
+  [4;36;1mThing Create (1.0ms)[0m   [0;1mINSERT INTO "things" ("pending", "created_at", "title", "body", "updated_at") VALUES('f', '2010-08-31 22:02:24', 'ajax on rails', '<%= javascript_include_tag "prototype" %>
+<%= link_to_remote image_tag(''checked.gif''), :update => "div1", :url =>{ :action => :unchecked } %>', '2010-08-31 22:02:24')[0m
+Redirected to http://localhost:3000/things/3
+Completed in 16ms (DB: 1) | 302 Found [http://localhost/things]
+
+
+Processing ThingsController#show (for 127.0.0.1 at 2010-08-31 19:02:24) [GET]
+  Parameters: {"id"=>"3"}
+Rendering template within layouts/application
+Rendering things/show
+
+ActionView::TemplateError (undefined method `title' for nil:NilClass) on line #3 of app/views/things/show.html.erb:
+1: <p>
+2:   <b>Title:</b>
+3:   <%=h @thing.title %>
+4: </p>
+5: 
+6: <p>
+
+    app/views/things/show.html.erb:3
+
+Rendered rescues/_trace (39.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 19:02:34) [GET]
+  [4;35;1mThing Load (1.0ms)[0m   [0mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+
+ActionView::TemplateError (undefined method `checked' for #<ActionView::Base:0x7082628>) on line #13 of app/views/things/index.html.erb:
+10: 	    <% if thing.pending %>    
+11: 		<%= link_to_remote image_tag('checked.gif'), :update => "div1", :url =>{ :action => :unchecked } %>
+12: 	    <% else %>	
+13: 		<%= link_to image_tag('unchecked.gif'), checked(thing) %>
+14: 	    <% end %>
+15: 	  
+16: 	  </tr>
+
+    app/views/things/index.html.erb:13
+    app/views/things/index.html.erb:3:in `each'
+    app/views/things/index.html.erb:3
+    app/controllers/things_controller.rb:14:in `index'
+
+Rendered rescues/_trace (89.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 19:02:38) [GET]
+  [4;36;1mThing Load (1.0ms)[0m   [0;1mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+
+ActionView::TemplateError (undefined method `checked' for #<ActionView::Base:0x72342c0>) on line #13 of app/views/things/index.html.erb:
+10: 	    <% if thing.pending %>    
+11: 		<%= link_to_remote image_tag('checked.gif'), :update => "div1", :url =>{ :action => :unchecked } %>
+12: 	    <% else %>	
+13: 		<%= link_to image_tag('unchecked.gif'), checked(thing) %>
+14: 	    <% end %>
+15: 	  
+16: 	  </tr>
+
+    app/views/things/index.html.erb:13
+    app/views/things/index.html.erb:3:in `each'
+    app/views/things/index.html.erb:3
+    app/controllers/things_controller.rb:14:in `index'
+
+Rendered rescues/_trace (43.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 19:03:10) [GET]
+  [4;35;1mThing Load (1.0ms)[0m   [0mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+
+ActionView::TemplateError (undefined method `checked' for #<ActionView::Base:0x7096620>) on line #13 of app/views/things/index.html.erb:
+10: 	    <% if thing.pending %>    
+11: 		<%= link_to_remote image_tag('checked.gif'), :update => "div1", :url =>{ :action => :unchecked } %>
+12: 	    <% else %>	
+13: 		<%= link_to image_tag('unchecked.gif'), checked(thing) %>
+14: 	    <% end %>
+15: 	  
+16: 	  </tr>
+
+    app/views/things/index.html.erb:13
+    app/views/things/index.html.erb:3:in `each'
+    app/views/things/index.html.erb:3
+    app/controllers/things_controller.rb:20:in `index'
+
+Rendered rescues/_trace (88.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 19:03:14) [GET]
+  [4;36;1mThing Load (0.0ms)[0m   [0;1mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+
+ActionView::TemplateError (undefined method `checked' for #<ActionView::Base:0x72119b8>) on line #13 of app/views/things/index.html.erb:
+10: 	    <% if thing.pending %>    
+11: 		<%= link_to_remote image_tag('checked.gif'), :update => "div1", :url =>{ :action => :unchecked } %>
+12: 	    <% else %>	
+13: 		<%= link_to image_tag('unchecked.gif'), checked(thing) %>
+14: 	    <% end %>
+15: 	  
+16: 	  </tr>
+
+    app/views/things/index.html.erb:13
+    app/views/things/index.html.erb:3:in `each'
+    app/views/things/index.html.erb:3
+    app/controllers/things_controller.rb:20:in `index'
+
+Rendered rescues/_trace (43.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 19:03:47) [GET]
+  [4;35;1mThing Load (0.0ms)[0m   [0mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Completed in 21ms (View: 15, DB: 0) | 200 OK [http://localhost/things]
+
+
+Processing ThingsController#checked (for 127.0.0.1 at 2010-08-31 19:03:52) [POST]
+  Parameters: {"authenticity_token"=>"02mHUb/6fRGhWKjc0fLBcSrsajDe71KMTcpJ3+SGMfI=", "_"=>""}
+
+ActionController::UnknownAction (No action responded to checked. Actions: create, destroy, edit, index, new, unchecked, and update):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 19:03:57) [GET]
+  [4;36;1mThing Load (0.0ms)[0m   [0;1mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Completed in 16ms (View: 10, DB: 0) | 200 OK [http://localhost/things]
+
+
+Processing ThingsController#unchecked (for 127.0.0.1 at 2010-08-31 19:04:01) [POST]
+  Parameters: {"authenticity_token"=>"02mHUb/6fRGhWKjc0fLBcSrsajDe71KMTcpJ3+SGMfI=", "_"=>""}
+
+ActionView::MissingTemplate (Missing template things/unchecked.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 19:04:03) [GET]
+  [4;35;1mThing Load (1.0ms)[0m   [0mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Completed in 18ms (View: 10, DB: 1) | 200 OK [http://localhost/things]
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 19:04:58) [GET]
+  [4;36;1mThing Load (1.0ms)[0m   [0;1mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Completed in 22ms (View: 15, DB: 1) | 200 OK [http://localhost/things]
+
+
+Processing ThingsController#unchecked (for 127.0.0.1 at 2010-08-31 19:05:06) [POST]
+  Parameters: {"authenticity_token"=>"02mHUb/6fRGhWKjc0fLBcSrsajDe71KMTcpJ3+SGMfI=", "_"=>""}
+
+ActionView::MissingTemplate (Missing template things/unchecked.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 19:05:30) [GET]
+  [4;35;1mThing Load (0.0ms)[0m   [0mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Completed in 17ms (View: 11, DB: 0) | 200 OK [http://localhost/things]
+
+
+Processing ThingsController#unchecked (for 127.0.0.1 at 2010-08-31 19:05:32) [POST]
+  Parameters: {"authenticity_token"=>"02mHUb/6fRGhWKjc0fLBcSrsajDe71KMTcpJ3+SGMfI=", "_"=>""}
+
+NoMethodError (Attempt to call private method):
+  app/controllers/things_controller.rb:6:in `unchecked'
+
+Rendered rescues/_trace (33.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 19:32:32) [GET]
+  [4;36;1mThing Load (0.0ms)[0m   [0;1mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Completed in 67ms (View: 61, DB: 0) | 200 OK [http://localhost/things]
+
+
+Processing ThingsController#unchecked (for 127.0.0.1 at 2010-08-31 19:32:34) [POST]
+  Parameters: {"authenticity_token"=>"02mHUb/6fRGhWKjc0fLBcSrsajDe71KMTcpJ3+SGMfI=", "id"=>"1", "_"=>""}
+  [4;35;1mThing Load (0.0ms)[0m   [0mSELECT * FROM "things" WHERE ("things"."id" = 1) [0m
+
+NoMethodError (Attempt to call private method):
+  app/controllers/things_controller.rb:9:in `unchecked'
+
+Rendered rescues/_trace (32.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 19:33:06) [GET]
+  [4;36;1mThing Load (1.0ms)[0m   [0;1mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Completed in 20ms (View: 14, DB: 1) | 200 OK [http://localhost/things]
+
+
+Processing ThingsController#unchecked (for 127.0.0.1 at 2010-08-31 19:33:08) [POST]
+  Parameters: {"authenticity_token"=>"02mHUb/6fRGhWKjc0fLBcSrsajDe71KMTcpJ3+SGMfI=", "_"=>""}
+
+ActiveRecord::RecordNotFound (Couldn't find Thing without an ID):
+  app/controllers/things_controller.rb:5:in `unchecked'
+
+Rendered rescues/_trace (32.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (not_found)
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 19:34:30) [GET]
+  [4;35;1mThing Load (1.0ms)[0m   [0mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+ERROR: compiling _run_erb_app47views47things47index46html46erb RAISED compile error
+c:/Workspaces/workrails/KnowledgeBase/app/views/things/index.html.erb:11: syntax error, unexpected tSYMBEG
+...l =>{ :action => :unchecked. :id => '3' } ).to_s); @output_b...
+                              ^
+c:/Workspaces/workrails/KnowledgeBase/app/views/things/index.html.erb:11: syntax error, unexpected '}', expecting ')'
+...on => :unchecked. :id => '3' } ).to_s); @output_buffer.conca...
+                              ^
+Function body:           def _run_erb_app47views47things47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<h1>things</h1>\n\n"
+
+;  @things.each do |thing| ; @output_buffer.concat "\n\n<div id='div1'>\n\t<table border=1>\n\t  <tr>\n\t    <td>"
+
+
+
+
+; @output_buffer.concat((h thing.title ).to_s); @output_buffer.concat "</td> \n\t    \n\t    "
+
+;  if thing.pending ; @output_buffer.concat "    \n\t\t"
+; @output_buffer.concat(( link_to_remote image_tag('checked.gif'), :update => "div1", :url =>{ :action => :unchecked. :id => '3' } ).to_s); @output_buffer.concat "\n\t    "
+;  else ; @output_buffer.concat "\t\n\t\t"
+; @output_buffer.concat(( link_to_remote image_tag('unchecked.gif'), :update => "div1", :url =>{ :action => :checked } ).to_s); @output_buffer.concat "\n\t    "
+;  end ; @output_buffer.concat "\n\t  \n\t  </tr>\n\t  <tr>\n\t    <td>"
+
+
+
+; @output_buffer.concat((h thing.body ).to_s); @output_buffer.concat "</td>\n\t  </tr>\n\t    \n\t  <tr>\n\t    <td>"
+
+
+
+; @output_buffer.concat(( link_to image_tag('edit.gif'), edit_thing_path(thing) ).to_s); @output_buffer.concat "\n\t    "
+; @output_buffer.concat(( link_to image_tag('delete.gif'), thing, :confirm => 'Are you sure?', :method => :delete ).to_s); @output_buffer.concat "</td>\n\t  </tr>\n\t</table>  \n</div>\n"
+
+
+
+;  end ; @output_buffer.concat "\n\n\n<br />\n\n"
+
+
+
+
+; @output_buffer.concat(( link_to 'New thing', new_thing_path ).to_s); @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: c:/Workspaces/workrails/KnowledgeBase/app/views/things/index.html.erb:35:in `compile!'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/renderable.rb:61:in `compile'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/renderable.rb:28:in `render'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/template.rb:205:in `render_template'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:265:in `render'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:348:in `_render_with_layout'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:262:in `render'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1250:in `render_for_file'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:942:in `render_without_benchmark'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:51:in `render'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Ruby187/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:51:in `render'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:135:in `send'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:135
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:179:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:179:in `respond'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:173:in `each'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:173:in `respond'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:107:in `respond_to'
+c:/Workspaces/workrails/KnowledgeBase/app/controllers/things_controller.rb:24:in `index'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1331:in `send'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1331:in `perform_action_without_filters'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:617:in `call_filters'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Ruby187/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/flash.rb:151:in `perform_action'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `send'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `process_without_filters'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:606:in `process'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:391:in `process'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:386:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/routing/route_set.rb:438:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:87:in `dispatch'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:121:in `_call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:130
+C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:9:in `cache'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:28:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/string_coercion.rb:25:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/head.rb:9:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/params_parser.rb:15:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/session/cookie_store.rb:99:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/failsafe.rb:26:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `synchronize'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:114:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/reloader.rb:34:in `run'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:108:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/rails/rack/static.rb:31:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:47:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `each'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/rails/rack/log_tailer.rb:17:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/chunked.rb:15:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/handler/mongrel.rb:67:in `process'
+C:/Ruby187/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:159:in `process_client'
+C:/Ruby187/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:158:in `each'
+C:/Ruby187/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:158:in `process_client'
+C:/Ruby187/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+C:/Ruby187/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `initialize'
+C:/Ruby187/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `new'
+C:/Ruby187/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+C:/Ruby187/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `initialize'
+C:/Ruby187/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `new'
+C:/Ruby187/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `run'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/handler/mongrel.rb:38:in `run'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/commands/server.rb:111
+C:/Ruby187/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+C:/Ruby187/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+c:/Workspaces/workrails/KnowledgeBase/app/views/things/index.html.erb:11: syntax error, unexpected tSYMBEG
+...l =>{ :action => :unchecked. :id => '3' } ).to_s); @output_b...
+                              ^
+c:/Workspaces/workrails/KnowledgeBase/app/views/things/index.html.erb:11: syntax error, unexpected '}', expecting ')'
+...on => :unchecked. :id => '3' } ).to_s); @output_buffer.conca...
+                              ^) on line #11 of app/views/things/index.html.erb:
+8: 	    <td><%=h thing.title %></td> 
+9: 	    
+10: 	    <% if thing.pending %>    
+11: 		<%= link_to_remote image_tag('checked.gif'), :update => "div1", :url =>{ :action => :unchecked. :id => '3' } %>
+12: 	    <% else %>	
+13: 		<%= link_to_remote image_tag('unchecked.gif'), :update => "div1", :url =>{ :action => :checked } %>
+14: 	    <% end %>
+
+    app/views/things/index.html.erb:35:in `compile!'
+    app/controllers/things_controller.rb:24:in `index'
+
+Rendered rescues/_trace (90.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 19:34:50) [GET]
+  [4;36;1mThing Load (0.0ms)[0m   [0;1mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Completed in 25ms (View: 18, DB: 0) | 200 OK [http://localhost/things]
+
+
+Processing ThingsController#unchecked (for 127.0.0.1 at 2010-08-31 19:34:52) [POST]
+  Parameters: {"authenticity_token"=>"02mHUb/6fRGhWKjc0fLBcSrsajDe71KMTcpJ3+SGMfI=", "id"=>"3", "_"=>""}
+  [4;35;1mThing Load (0.0ms)[0m   [0mSELECT * FROM "things" WHERE ("things"."id" = 3) [0m
+
+NoMethodError (Attempt to call private method):
+  app/controllers/things_controller.rb:9:in `unchecked'
+
+Rendered rescues/_trace (33.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 19:35:39) [GET]
+  [4;36;1mThing Load (1.0ms)[0m   [0;1mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Completed in 33ms (View: 24, DB: 1) | 200 OK [http://localhost/things]
+
+
+Processing ThingsController#unchecked (for 127.0.0.1 at 2010-08-31 19:35:41) [POST]
+  Parameters: {"authenticity_token"=>"02mHUb/6fRGhWKjc0fLBcSrsajDe71KMTcpJ3+SGMfI=", "id"=>"git", "_"=>""}
+  [4;35;1mThing Load (0.0ms)[0m   [0mSELECT * FROM "things" WHERE ("things"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Thing with ID=git):
+  app/controllers/things_controller.rb:5:in `unchecked'
+
+Rendered rescues/_trace (77.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (not_found)
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 19:35:55) [GET]
+  [4;36;1mThing Load (1.0ms)[0m   [0;1mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Completed in 21ms (View: 14, DB: 1) | 200 OK [http://localhost/things]
+
+
+Processing ThingsController#unchecked (for 127.0.0.1 at 2010-08-31 19:35:58) [POST]
+  Parameters: {"authenticity_token"=>"02mHUb/6fRGhWKjc0fLBcSrsajDe71KMTcpJ3+SGMfI=", "id"=>"1", "_"=>""}
+  [4;35;1mThing Load (0.0ms)[0m   [0mSELECT * FROM "things" WHERE ("things"."id" = 1) [0m
+
+NoMethodError (Attempt to call private method):
+  app/controllers/things_controller.rb:9:in `unchecked'
+
+Rendered rescues/_trace (32.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 19:36:50) [GET]
+  [4;36;1mThing Load (1.0ms)[0m   [0;1mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Completed in 18ms (View: 11, DB: 1) | 200 OK [http://localhost/things]
+
+
+Processing ThingsController#unchecked (for 127.0.0.1 at 2010-08-31 19:36:52) [POST]
+  Parameters: {"authenticity_token"=>"02mHUb/6fRGhWKjc0fLBcSrsajDe71KMTcpJ3+SGMfI=", "id"=>"1", "_"=>""}
+  [4;35;1mThing Load (1.0ms)[0m   [0mSELECT * FROM "things" WHERE ("things"."id" = 1) [0m
+
+ArgumentError (wrong number of arguments (0 for 1)):
+  app/controllers/things_controller.rb:9:in `update_attributes'
+  app/controllers/things_controller.rb:9:in `unchecked'
+
+Rendered rescues/_trace (75.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 19:37:43) [GET]
+  [4;36;1mThing Load (1.0ms)[0m   [0;1mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Completed in 18ms (View: 10, DB: 1) | 200 OK [http://localhost/things]
+
+
+Processing ThingsController#unchecked (for 127.0.0.1 at 2010-08-31 19:37:45) [POST]
+  Parameters: {"authenticity_token"=>"02mHUb/6fRGhWKjc0fLBcSrsajDe71KMTcpJ3+SGMfI=", "id"=>"1", "_"=>""}
+  [4;35;1mThing Load (0.0ms)[0m   [0mSELECT * FROM "things" WHERE ("things"."id" = 1) [0m
+
+NoMethodError (undefined method `stringify_keys!' for #<Thing:0x7190a30>):
+  app/controllers/things_controller.rb:9:in `unchecked'
+
+Rendered rescues/_trace (42.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 19:38:22) [GET]
+  [4;36;1mThing Load (1.0ms)[0m   [0;1mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Completed in 20ms (View: 13, DB: 1) | 200 OK [http://localhost/things]
+
+
+Processing ThingsController#unchecked (for 127.0.0.1 at 2010-08-31 19:38:23) [POST]
+  Parameters: {"authenticity_token"=>"02mHUb/6fRGhWKjc0fLBcSrsajDe71KMTcpJ3+SGMfI=", "id"=>"1", "_"=>""}
+  [4;35;1mThing Load (1.0ms)[0m   [0mSELECT * FROM "things" WHERE ("things"."id" = 1) [0m
+  [4;36;1mThing Update (1.0ms)[0m   [0;1mUPDATE "things" SET "updated_at" = '2010-08-31 22:38:23', "pending" = 'f' WHERE "id" = 1[0m
+
+ActionView::MissingTemplate (Missing template things/unchecked.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 19:38:27) [GET]
+  [4;35;1mThing Load (0.0ms)[0m   [0mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Completed in 16ms (View: 10, DB: 0) | 200 OK [http://localhost/things]
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 19:40:41) [GET]
+  [4;36;1mThing Load (1.0ms)[0m   [0;1mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Completed in 63ms (View: 57, DB: 1) | 200 OK [http://localhost/things]
+
+
+Processing ThingsController#checked (for 127.0.0.1 at 2010-08-31 19:40:43) [POST]
+  Parameters: {"authenticity_token"=>"02mHUb/6fRGhWKjc0fLBcSrsajDe71KMTcpJ3+SGMfI=", "_"=>""}
+
+ActiveRecord::RecordNotFound (Couldn't find Thing without an ID):
+  app/controllers/things_controller.rb:10:in `checked'
+
+Rendered rescues/_trace (32.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (not_found)
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 19:41:14) [GET]
+  [4;35;1mThing Load (1.0ms)[0m   [0mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Completed in 24ms (View: 14, DB: 1) | 200 OK [http://localhost/things]
+
+
+Processing ThingsController#checked (for 127.0.0.1 at 2010-08-31 19:41:16) [POST]
+  Parameters: {"authenticity_token"=>"02mHUb/6fRGhWKjc0fLBcSrsajDe71KMTcpJ3+SGMfI=", "id"=>"1", "_"=>""}
+  [4;36;1mThing Load (0.0ms)[0m   [0;1mSELECT * FROM "things" WHERE ("things"."id" = 1) [0m
+  [4;35;1mThing Update (1.0ms)[0m   [0mUPDATE "things" SET "updated_at" = '2010-08-31 22:41:16', "pending" = 't' WHERE "id" = 1[0m
+Rendering template within layouts/application
+Rendering things/checked
+
+ActionView::TemplateError (undefined local variable or method `thing' for #<ActionView::Base:0x70ffa58>) on line #3 of app/views/things/checked.html.erb:
+1: 	<table border=1>
+2: 	  <tr>
+3: 	    <td><%=h thing.title %></td> 
+4: 	    
+5: 	    <% if thing.pending %>    
+6: 		<%= link_to_remote image_tag('checked.gif'), :update => "div1", :url =>{ :action => :unchecked, :id => thing.id } %>
+
+    app/views/things/checked.html.erb:3
+
+Rendered rescues/_trace (38.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 19:41:31) [GET]
+  [4;36;1mThing Load (1.0ms)[0m   [0;1mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Completed in 16ms (View: 10, DB: 1) | 200 OK [http://localhost/things]
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 19:43:37) [GET]
+  [4;35;1mThing Load (1.0ms)[0m   [0mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Completed in 18ms (View: 12, DB: 1) | 200 OK [http://localhost/things]
+
+
+Processing ThingsController#checked (for 127.0.0.1 at 2010-08-31 19:43:40) [POST]
+  Parameters: {"authenticity_token"=>"02mHUb/6fRGhWKjc0fLBcSrsajDe71KMTcpJ3+SGMfI=", "id"=>"3", "_"=>""}
+  [4;36;1mThing Load (0.0ms)[0m   [0;1mSELECT * FROM "things" WHERE ("things"."id" = 3) [0m
+  [4;35;1mThing Update (1.0ms)[0m   [0mUPDATE "things" SET "updated_at" = '2010-08-31 22:43:40', "pending" = 't' WHERE "id" = 3[0m
+
+ArgumentError (too few arguments):
+  app/controllers/things_controller.rb:14:in `format'
+  app/controllers/things_controller.rb:14:in `checked'
+
+Rendered rescues/_trace (46.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 19:43:46) [GET]
+  [4;36;1mThing Load (1.0ms)[0m   [0;1mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Completed in 16ms (View: 10, DB: 1) | 200 OK [http://localhost/things]
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 19:44:32) [GET]
+  [4;35;1mThing Load (0.0ms)[0m   [0mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Completed in 17ms (View: 11, DB: 0) | 200 OK [http://localhost/things]
+
+
+Processing ThingsController#unchecked (for 127.0.0.1 at 2010-08-31 19:44:33) [POST]
+  Parameters: {"authenticity_token"=>"02mHUb/6fRGhWKjc0fLBcSrsajDe71KMTcpJ3+SGMfI=", "id"=>"1", "_"=>""}
+  [4;36;1mThing Load (0.0ms)[0m   [0;1mSELECT * FROM "things" WHERE ("things"."id" = 1) [0m
+  [4;35;1mThing Update (1.0ms)[0m   [0mUPDATE "things" SET "updated_at" = '2010-08-31 22:44:33', "pending" = 'f' WHERE "id" = 1[0m
+Rendering template within layouts/application
+Rendering things/unchecked
+
+ActionView::TemplateError (undefined local variable or method `thing' for #<ActionView::Base:0x6fd9b48>) on line #3 of app/views/things/unchecked.html.erb:
+1: <table border=1>
+2:   <tr>
+3:     <td><%=h thing.title %></td> 
+4:     
+5:     <% if thing.pending %>    
+6: 	<%= link_to_remote image_tag('checked.gif'), :update => "div1", :url =>{ :action => :unchecked, :id => thing.id } %>
+
+    app/views/things/unchecked.html.erb:3
+
+Rendered rescues/_trace (39.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 19:45:10) [GET]
+  [4;36;1mThing Load (0.0ms)[0m   [0;1mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Completed in 19ms (View: 12, DB: 0) | 200 OK [http://localhost/things]
+
+
+Processing ThingsController#unchecked (for 127.0.0.1 at 2010-08-31 19:45:13) [POST]
+  Parameters: {"authenticity_token"=>"02mHUb/6fRGhWKjc0fLBcSrsajDe71KMTcpJ3+SGMfI=", "id"=>"3", "_"=>""}
+  [4;35;1mThing Load (0.0ms)[0m   [0mSELECT * FROM "things" WHERE ("things"."id" = 3) [0m
+  [4;36;1mThing Update (1.0ms)[0m   [0;1mUPDATE "things" SET "updated_at" = '2010-08-31 22:45:13', "pending" = 'f' WHERE "id" = 3[0m
+Rendering template within layouts/application
+Rendering things/unchecked
+
+ActionView::TemplateError (undefined local variable or method `thing' for #<ActionView::Base:0x7121f58>) on line #5 of app/views/things/unchecked.html.erb:
+2:   <tr>
+3:     <td><%=h @thing.title %></td> 
+4:     
+5:     <% if thing.pending %>    
+6: 	<%= link_to_remote image_tag('checked.gif'), :update => "div1", :url =>{ :action => :unchecked, :id => thing.id } %>
+7:     <% else %>	
+8: 	<%= link_to_remote image_tag('unchecked.gif'), :update => "div1", :url =>{ :action => :checked } %>
+
+    app/views/things/unchecked.html.erb:5
+
+Rendered rescues/_trace (38.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 19:46:15) [GET]
+  [4;35;1mThing Load (1.0ms)[0m   [0mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Completed in 63ms (View: 57, DB: 1) | 200 OK [http://localhost/things]
+
+
+Processing ThingsController#checked (for 127.0.0.1 at 2010-08-31 19:46:17) [POST]
+  Parameters: {"authenticity_token"=>"02mHUb/6fRGhWKjc0fLBcSrsajDe71KMTcpJ3+SGMfI=", "id"=>"1", "_"=>""}
+  [4;36;1mThing Load (0.0ms)[0m   [0;1mSELECT * FROM "things" WHERE ("things"."id" = 1) [0m
+  [4;35;1mThing Update (0.0ms)[0m   [0mUPDATE "things" SET "updated_at" = '2010-08-31 22:46:17', "pending" = 't' WHERE "id" = 1[0m
+Rendering template within layouts/application
+Rendering things/checked
+
+ActionView::TemplateError (undefined local variable or method `thing' for #<ActionView::Base:0x7241ac0>) on line #3 of app/views/things/checked.html.erb:
+1: <table border=1>
+2:   <tr>
+3:     <td><%=h thing.title %></td> 
+4:     
+5:     <% if thing.pending %>    
+6: 	<%= link_to_remote image_tag('checked.gif'), :update => "div1", :url =>{ :action => :unchecked, :id => thing.id } %>
+
+    app/views/things/checked.html.erb:3
+    app/controllers/things_controller.rb:19:in `checked'
+
+Rendered rescues/_trace (42.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 19:47:23) [GET]
+  [4;36;1mThing Load (1.0ms)[0m   [0;1mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Completed in 20ms (View: 12, DB: 1) | 200 OK [http://localhost/things]
+
+
+Processing ThingsController#checked (for 127.0.0.1 at 2010-08-31 19:47:26) [POST]
+  Parameters: {"authenticity_token"=>"02mHUb/6fRGhWKjc0fLBcSrsajDe71KMTcpJ3+SGMfI=", "id"=>"3", "_"=>""}
+  [4;35;1mThing Load (0.0ms)[0m   [0mSELECT * FROM "things" WHERE ("things"."id" = 3) [0m
+  [4;36;1mThing Update (1.0ms)[0m   [0;1mUPDATE "things" SET "updated_at" = '2010-08-31 22:47:26', "pending" = 't' WHERE "id" = 3[0m
+Rendering template within layouts/application
+Rendering things/checked
+
+ActionView::TemplateError (undefined local variable or method `thing' for #<ActionView::Base:0x7045140>) on line #3 of app/views/things/checked.html.erb:
+1: <table border=1>
+2:   <tr>
+3:     <td><%=h thing.title %></td> 
+4:     
+5:     <% if thing.pending %>    
+6: 	<%= link_to_remote image_tag('checked.gif'), :update => "div1", :url =>{ :action => :unchecked, :id => thing.id } %>
+
+    app/views/things/checked.html.erb:3
+    app/controllers/things_controller.rb:19:in `checked'
+
+Rendered rescues/_trace (86.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 19:48:57) [GET]
+  [4;35;1mThing Load (0.0ms)[0m   [0mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Completed in 18ms (View: 11, DB: 0) | 200 OK [http://localhost/things]
+
+
+Processing ThingsController#unchecked (for 127.0.0.1 at 2010-08-31 19:48:59) [POST]
+  Parameters: {"authenticity_token"=>"02mHUb/6fRGhWKjc0fLBcSrsajDe71KMTcpJ3+SGMfI=", "id"=>"1", "_"=>""}
+  [4;36;1mThing Load (0.0ms)[0m   [0;1mSELECT * FROM "things" WHERE ("things"."id" = 1) [0m
+  [4;35;1mThing Update (1.0ms)[0m   [0mUPDATE "things" SET "updated_at" = '2010-08-31 22:48:59', "pending" = 'f' WHERE "id" = 1[0m
+Rendering template within layouts/application
+Rendering things/unchecked
+Completed in 45ms (View: 12, DB: 1) | 200 OK [http://localhost/things/unchecked/1]
+
+
+Processing ThingsController#unchecked (for 127.0.0.1 at 2010-08-31 19:49:00) [POST]
+  Parameters: {"authenticity_token"=>"02mHUb/6fRGhWKjc0fLBcSrsajDe71KMTcpJ3+SGMfI=", "id"=>"3", "_"=>""}
+  [4;36;1mThing Load (0.0ms)[0m   [0;1mSELECT * FROM "things" WHERE ("things"."id" = 3) [0m
+  [4;35;1mThing Update (1.0ms)[0m   [0mUPDATE "things" SET "updated_at" = '2010-08-31 22:49:00', "pending" = 'f' WHERE "id" = 3[0m
+Rendering template within layouts/application
+Rendering things/unchecked
+Completed in 30ms (View: 8, DB: 1) | 200 OK [http://localhost/things/unchecked/3]
+
+
+Processing ThingsController#checked (for 127.0.0.1 at 2010-08-31 19:49:03) [POST]
+  Parameters: {"authenticity_token"=>"02mHUb/6fRGhWKjc0fLBcSrsajDe71KMTcpJ3+SGMfI=", "_"=>""}
+
+ActiveRecord::RecordNotFound (Couldn't find Thing without an ID):
+  app/controllers/things_controller.rb:15:in `checked'
+
+Rendered rescues/_trace (32.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (not_found)
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 19:49:06) [GET]
+  [4;36;1mThing Load (1.0ms)[0m   [0;1mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Completed in 16ms (View: 10, DB: 1) | 200 OK [http://localhost/things]
+
+
+Processing ThingsController#checked (for 127.0.0.1 at 2010-08-31 19:49:11) [POST]
+  Parameters: {"authenticity_token"=>"02mHUb/6fRGhWKjc0fLBcSrsajDe71KMTcpJ3+SGMfI=", "id"=>"3", "_"=>""}
+  [4;35;1mThing Load (0.0ms)[0m   [0mSELECT * FROM "things" WHERE ("things"."id" = 3) [0m
+  [4;36;1mThing Update (0.0ms)[0m   [0;1mUPDATE "things" SET "updated_at" = '2010-08-31 22:49:11', "pending" = 't' WHERE "id" = 3[0m
+Rendering template within layouts/application
+Rendering things/checked
+Completed in 26ms (View: 10, DB: 0) | 200 OK [http://localhost/things/checked/3]
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 19:49:13) [GET]
+  [4;35;1mThing Load (1.0ms)[0m   [0mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Completed in 16ms (View: 10, DB: 1) | 200 OK [http://localhost/things]
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 19:51:13) [GET]
+  [4;36;1mThing Load (1.0ms)[0m   [0;1mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Completed in 21ms (View: 14, DB: 1) | 200 OK [http://localhost/things]
+
+
+Processing ThingsController#checked (for 127.0.0.1 at 2010-08-31 19:51:16) [POST]
+  Parameters: {"authenticity_token"=>"02mHUb/6fRGhWKjc0fLBcSrsajDe71KMTcpJ3+SGMfI=", "id"=>"1", "_"=>""}
+  [4;35;1mThing Load (0.0ms)[0m   [0mSELECT * FROM "things" WHERE ("things"."id" = 1) [0m
+  [4;36;1mThing Update (1.0ms)[0m   [0;1mUPDATE "things" SET "updated_at" = '2010-08-31 22:51:16', "pending" = 't' WHERE "id" = 1[0m
+Rendering template within layouts/application
+Rendering things/checked
+Completed in 33ms (View: 10, DB: 1) | 200 OK [http://localhost/things/checked/1]
+
+
+Processing ThingsController#checked (for 127.0.0.1 at 2010-08-31 19:51:17) [POST]
+  Parameters: {"authenticity_token"=>"02mHUb/6fRGhWKjc0fLBcSrsajDe71KMTcpJ3+SGMfI=", "id"=>"1", "_"=>""}
+  [4;35;1mThing Load (0.0ms)[0m   [0mSELECT * FROM "things" WHERE ("things"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering things/checked
+Completed in 17ms (View: 7, DB: 0) | 200 OK [http://localhost/things/checked/1]
+
+
+Processing ThingsController#unchecked (for 127.0.0.1 at 2010-08-31 19:51:20) [POST]
+  Parameters: {"authenticity_token"=>"02mHUb/6fRGhWKjc0fLBcSrsajDe71KMTcpJ3+SGMfI=", "id"=>"3", "_"=>""}
+  [4;36;1mThing Load (0.0ms)[0m   [0;1mSELECT * FROM "things" WHERE ("things"."id" = 3) [0m
+  [4;35;1mThing Update (0.0ms)[0m   [0mUPDATE "things" SET "updated_at" = '2010-08-31 22:51:20', "pending" = 'f' WHERE "id" = 3[0m
+Rendering template within layouts/application
+Rendering things/unchecked
+Completed in 27ms (View: 11, DB: 0) | 200 OK [http://localhost/things/unchecked/3]
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 19:51:21) [GET]
+  [4;36;1mThing Load (1.0ms)[0m   [0;1mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Completed in 16ms (View: 10, DB: 1) | 200 OK [http://localhost/things]
+
+
+Processing ThingsController#checked (for 127.0.0.1 at 2010-08-31 19:51:25) [POST]
+  Parameters: {"authenticity_token"=>"02mHUb/6fRGhWKjc0fLBcSrsajDe71KMTcpJ3+SGMfI=", "id"=>"3", "_"=>""}
+  [4;35;1mThing Load (1.0ms)[0m   [0mSELECT * FROM "things" WHERE ("things"."id" = 3) [0m
+  [4;36;1mThing Update (0.0ms)[0m   [0;1mUPDATE "things" SET "updated_at" = '2010-08-31 22:51:25', "pending" = 't' WHERE "id" = 3[0m
+Rendering template within layouts/application
+Rendering things/checked
+Completed in 22ms (View: 6, DB: 1) | 200 OK [http://localhost/things/checked/3]
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 19:51:27) [GET]
+  [4;35;1mThing Load (0.0ms)[0m   [0mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Completed in 16ms (View: 10, DB: 0) | 200 OK [http://localhost/things]
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 19:52:25) [GET]
+  [4;36;1mThing Load (1.0ms)[0m   [0;1mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Completed in 21ms (View: 15, DB: 1) | 200 OK [http://localhost/things]
+
+
+Processing ThingsController#unchecked (for 127.0.0.1 at 2010-08-31 19:52:27) [POST]
+  Parameters: {"authenticity_token"=>"02mHUb/6fRGhWKjc0fLBcSrsajDe71KMTcpJ3+SGMfI=", "id"=>"3", "_"=>""}
+  [4;35;1mThing Load (0.0ms)[0m   [0mSELECT * FROM "things" WHERE ("things"."id" = 3) [0m
+  [4;36;1mThing Update (1.0ms)[0m   [0;1mUPDATE "things" SET "updated_at" = '2010-08-31 22:52:27', "pending" = 'f' WHERE "id" = 3[0m
+Rendering template within layouts/application
+Rendering things/unchecked
+Completed in 23ms (View: 5, DB: 1) | 200 OK [http://localhost/things/unchecked/3]
+
+
+Processing ThingsController#unchecked (for 127.0.0.1 at 2010-08-31 19:52:28) [POST]
+  Parameters: {"authenticity_token"=>"02mHUb/6fRGhWKjc0fLBcSrsajDe71KMTcpJ3+SGMfI=", "id"=>"1", "_"=>""}
+  [4;35;1mThing Load (0.0ms)[0m   [0mSELECT * FROM "things" WHERE ("things"."id" = 1) [0m
+  [4;36;1mThing Update (0.0ms)[0m   [0;1mUPDATE "things" SET "updated_at" = '2010-08-31 22:52:28', "pending" = 'f' WHERE "id" = 1[0m
+Rendering template within layouts/application
+Rendering things/unchecked
+Completed in 22ms (View: 5, DB: 0) | 200 OK [http://localhost/things/unchecked/1]
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 19:52:30) [GET]
+  [4;35;1mThing Load (1.0ms)[0m   [0mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Completed in 17ms (View: 11, DB: 1) | 200 OK [http://localhost/things]
+
+
+Processing ThingsController#checked (for 127.0.0.1 at 2010-08-31 19:52:34) [POST]
+  Parameters: {"authenticity_token"=>"02mHUb/6fRGhWKjc0fLBcSrsajDe71KMTcpJ3+SGMfI=", "id"=>"3", "_"=>""}
+  [4;36;1mThing Load (1.0ms)[0m   [0;1mSELECT * FROM "things" WHERE ("things"."id" = 3) [0m
+  [4;35;1mThing Update (1.0ms)[0m   [0mUPDATE "things" SET "updated_at" = '2010-08-31 22:52:34', "pending" = 't' WHERE "id" = 3[0m
+Rendering template within layouts/application
+Rendering things/checked
+Completed in 68ms (View: 9, DB: 2) | 200 OK [http://localhost/things/checked/3]
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 19:52:35) [GET]
+  [4;36;1mThing Load (0.0ms)[0m   [0;1mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Completed in 17ms (View: 11, DB: 0) | 200 OK [http://localhost/things]
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 19:53:19) [GET]
+  [4;35;1mThing Load (1.0ms)[0m   [0mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Completed in 24ms (View: 16, DB: 1) | 200 OK [http://localhost/things]
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 19:54:05) [GET]
+  [4;36;1mThing Load (1.0ms)[0m   [0;1mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Completed in 22ms (View: 14, DB: 1) | 200 OK [http://localhost/things]
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 19:54:29) [GET]
+  [4;35;1mThing Load (1.0ms)[0m   [0mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Completed in 17ms (View: 11, DB: 1) | 200 OK [http://localhost/things]
+
+
+Processing ThingsController#checked (for 127.0.0.1 at 2010-08-31 19:54:31) [POST]
+  Parameters: {"authenticity_token"=>"02mHUb/6fRGhWKjc0fLBcSrsajDe71KMTcpJ3+SGMfI=", "id"=>"1", "_"=>""}
+  [4;36;1mThing Load (0.0ms)[0m   [0;1mSELECT * FROM "things" WHERE ("things"."id" = 1) [0m
+  [4;35;1mThing Update (1.0ms)[0m   [0mUPDATE "things" SET "updated_at" = '2010-08-31 22:54:31', "pending" = 't' WHERE "id" = 1[0m
+Rendering template within layouts/application
+Rendering things/checked
+Completed in 23ms (View: 6, DB: 1) | 200 OK [http://localhost/things/checked/1]
+
+
+Processing ThingsController#unchecked (for 127.0.0.1 at 2010-08-31 19:54:33) [POST]
+  Parameters: {"authenticity_token"=>"02mHUb/6fRGhWKjc0fLBcSrsajDe71KMTcpJ3+SGMfI=", "id"=>"3", "_"=>""}
+  [4;36;1mThing Load (1.0ms)[0m   [0;1mSELECT * FROM "things" WHERE ("things"."id" = 3) [0m
+  [4;35;1mThing Update (1.0ms)[0m   [0mUPDATE "things" SET "updated_at" = '2010-08-31 22:54:33', "pending" = 'f' WHERE "id" = 3[0m
+Rendering template within layouts/application
+Rendering things/unchecked
+Completed in 24ms (View: 6, DB: 2) | 200 OK [http://localhost/things/unchecked/3]
+
+
+Processing ThingsController#checked (for 127.0.0.1 at 2010-08-31 19:54:35) [POST]
+  Parameters: {"authenticity_token"=>"02mHUb/6fRGhWKjc0fLBcSrsajDe71KMTcpJ3+SGMfI=", "_"=>""}
+
+ActiveRecord::RecordNotFound (Couldn't find Thing without an ID):
+  app/controllers/things_controller.rb:15:in `checked'
+
+Rendered rescues/_trace (33.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (not_found)
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 19:55:36) [GET]
+  [4;36;1mThing Load (1.0ms)[0m   [0;1mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Completed in 17ms (View: 11, DB: 1) | 200 OK [http://localhost/things]
+
+
+Processing ThingsController#unchecked (for 127.0.0.1 at 2010-08-31 19:55:38) [POST]
+  Parameters: {"authenticity_token"=>"02mHUb/6fRGhWKjc0fLBcSrsajDe71KMTcpJ3+SGMfI=", "id"=>"1", "_"=>""}
+  [4;35;1mThing Load (0.0ms)[0m   [0mSELECT * FROM "things" WHERE ("things"."id" = 1) [0m
+  [4;36;1mThing Update (0.0ms)[0m   [0;1mUPDATE "things" SET "updated_at" = '2010-08-31 22:55:38', "pending" = 'f' WHERE "id" = 1[0m
+Rendering template within layouts/application
+Rendering things/unchecked
+Completed in 27ms (View: 10, DB: 0) | 200 OK [http://localhost/things/unchecked/1]
+
+
+Processing ThingsController#checked (for 127.0.0.1 at 2010-08-31 19:55:39) [POST]
+  Parameters: {"authenticity_token"=>"02mHUb/6fRGhWKjc0fLBcSrsajDe71KMTcpJ3+SGMfI=", "id"=>"1", "_"=>""}
+  [4;35;1mThing Load (0.0ms)[0m   [0mSELECT * FROM "things" WHERE ("things"."id" = 1) [0m
+  [4;36;1mThing Update (1.0ms)[0m   [0;1mUPDATE "things" SET "updated_at" = '2010-08-31 22:55:39', "pending" = 't' WHERE "id" = 1[0m
+Rendering template within layouts/application
+Rendering things/checked
+Completed in 27ms (View: 10, DB: 1) | 200 OK [http://localhost/things/checked/1]
+
+
+Processing ThingsController#unchecked (for 127.0.0.1 at 2010-08-31 19:55:40) [POST]
+  Parameters: {"authenticity_token"=>"02mHUb/6fRGhWKjc0fLBcSrsajDe71KMTcpJ3+SGMfI=", "id"=>"1", "_"=>""}
+  [4;35;1mThing Load (0.0ms)[0m   [0mSELECT * FROM "things" WHERE ("things"."id" = 1) [0m
+  [4;36;1mThing Update (1.0ms)[0m   [0;1mUPDATE "things" SET "updated_at" = '2010-08-31 22:55:40', "pending" = 'f' WHERE "id" = 1[0m
+Rendering template within layouts/application
+Rendering things/unchecked
+Completed in 23ms (View: 6, DB: 1) | 200 OK [http://localhost/things/unchecked/1]
+
+
+Processing ThingsController#checked (for 127.0.0.1 at 2010-08-31 19:55:42) [POST]
+  Parameters: {"authenticity_token"=>"02mHUb/6fRGhWKjc0fLBcSrsajDe71KMTcpJ3+SGMfI=", "id"=>"1", "_"=>""}
+  [4;35;1mThing Load (0.0ms)[0m   [0mSELECT * FROM "things" WHERE ("things"."id" = 1) [0m
+  [4;36;1mThing Update (1.0ms)[0m   [0;1mUPDATE "things" SET "updated_at" = '2010-08-31 22:55:42', "pending" = 't' WHERE "id" = 1[0m
+Rendering template within layouts/application
+Rendering things/checked
+Completed in 21ms (View: 5, DB: 1) | 200 OK [http://localhost/things/checked/1]
+
+
+Processing ThingsController#checked (for 127.0.0.1 at 2010-08-31 19:55:43) [POST]
+  Parameters: {"authenticity_token"=>"02mHUb/6fRGhWKjc0fLBcSrsajDe71KMTcpJ3+SGMfI=", "id"=>"3", "_"=>""}
+  [4;35;1mThing Load (0.0ms)[0m   [0mSELECT * FROM "things" WHERE ("things"."id" = 3) [0m
+  [4;36;1mThing Update (1.0ms)[0m   [0;1mUPDATE "things" SET "updated_at" = '2010-08-31 22:55:43', "pending" = 't' WHERE "id" = 3[0m
+Rendering template within layouts/application
+Rendering things/checked
+Completed in 21ms (View: 6, DB: 1) | 200 OK [http://localhost/things/checked/3]
+
+
+Processing ThingsController#unchecked (for 127.0.0.1 at 2010-08-31 19:55:45) [POST]
+  Parameters: {"authenticity_token"=>"02mHUb/6fRGhWKjc0fLBcSrsajDe71KMTcpJ3+SGMfI=", "id"=>"3", "_"=>""}
+  [4;35;1mThing Load (0.0ms)[0m   [0mSELECT * FROM "things" WHERE ("things"."id" = 3) [0m
+  [4;36;1mThing Update (1.0ms)[0m   [0;1mUPDATE "things" SET "updated_at" = '2010-08-31 22:55:45', "pending" = 'f' WHERE "id" = 3[0m
+Rendering template within layouts/application
+Rendering things/unchecked
+Completed in 22ms (View: 6, DB: 1) | 200 OK [http://localhost/things/unchecked/3]
+
+
+Processing ThingsController#edit (for 127.0.0.1 at 2010-08-31 19:55:52) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mThing Load (0.0ms)[0m   [0mSELECT * FROM "things" WHERE ("things"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering things/edit
+Rendered things/_cadastro (7.0ms)
+Completed in 16ms (View: 10, DB: 0) | 200 OK [http://localhost/things/3/edit]
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 19:55:55) [GET]
+  [4;36;1mThing Load (1.0ms)[0m   [0;1mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Completed in 17ms (View: 10, DB: 1) | 200 OK [http://localhost/things]
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 20:26:26) [GET]
+  [4;35;1mThing Load (0.0ms)[0m   [0mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+ERROR: compiling _run_erb_app47views47things47index46html46erb RAISED compile error
+c:/Workspaces/workrails/KnowledgeBase/app/views/things/index.html.erb:11: syntax error, unexpected tASSOC, expecting kEND
+;  :imagem_check => 'unchecked' ; @output_buffer.concat "\n\t    "
+                   ^
+c:/Workspaces/workrails/KnowledgeBase/app/views/things/index.html.erb:13: syntax error, unexpected tASSOC, expecting kEND
+;  :imagem_check => 'checked' ; @output_buffer.concat "\n\t    "
+                   ^
+Function body:           def _run_erb_app47views47things47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<h1>things</h1>\n\n"
+
+;  @things.each do |thing| ; @output_buffer.concat "\n\n<div id="
+
+; @output_buffer.concat(("div#{thing.id}").to_s); @output_buffer.concat ">\n\t<table border=1>\n\t  <tr>\n\t    <td>"
+
+
+; @output_buffer.concat((h thing.title ).to_s); @output_buffer.concat "</td> \n\t    \n\t    "
+
+;  if thing.pending ; @output_buffer.concat "    \n\t    \t"
+;  :imagem_check => 'unchecked' ; @output_buffer.concat "\n\t    "
+;  else ; @output_buffer.concat "\n\t    \t"
+;  :imagem_check => 'checked' ; @output_buffer.concat "\n\t    "
+;  end ; @output_buffer.concat "\n\t  \n\t    "
+
+; @output_buffer.concat(( link_to_remote image_tag(:imagem_check+'.gif'), :update => "div#{thing.id}", :url =>{ :action => :check, :id => thing.id } ).to_s); @output_buffer.concat "\n\t    \n\t  </tr>\n\t  <tr>\n\t    <td>"
+
+
+
+; @output_buffer.concat((h thing.body ).to_s); @output_buffer.concat "</td>\n\t  </tr>\n\t    \n\t  <tr>\n\t    <td>"
+
+
+
+; @output_buffer.concat(( link_to image_tag('edit.gif'), edit_thing_path(thing) ).to_s); @output_buffer.concat "\n\t    "
+; @output_buffer.concat(( link_to image_tag('delete.gif'), thing, :confirm => 'Are you sure?', :method => :delete ).to_s); @output_buffer.concat "</td>\n\t  </tr>\n\t</table>  \n</div>\n"
+
+
+
+;  end ; @output_buffer.concat "\n\n\n<br />\n\n"
+
+
+
+
+; @output_buffer.concat(( link_to 'New thing', new_thing_path ).to_s); @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: c:/Workspaces/workrails/KnowledgeBase/app/views/things/index.html.erb:37:in `compile!'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/renderable.rb:61:in `compile'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/renderable.rb:28:in `render'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/template.rb:205:in `render_template'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:265:in `render'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:348:in `_render_with_layout'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:262:in `render'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1250:in `render_for_file'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:942:in `render_without_benchmark'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:51:in `render'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Ruby187/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:51:in `render'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:135:in `send'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:135
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:179:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:179:in `respond'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:173:in `each'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:173:in `respond'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:107:in `respond_to'
+c:/Workspaces/workrails/KnowledgeBase/app/controllers/things_controller.rb:31:in `index'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1331:in `send'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1331:in `perform_action_without_filters'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:617:in `call_filters'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Ruby187/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/flash.rb:151:in `perform_action'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `send'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `process_without_filters'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:606:in `process'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:391:in `process'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:386:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/routing/route_set.rb:438:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:87:in `dispatch'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:121:in `_call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:130
+C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:9:in `cache'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:28:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/string_coercion.rb:25:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/head.rb:9:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/params_parser.rb:15:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/session/cookie_store.rb:99:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/failsafe.rb:26:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `synchronize'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:114:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/reloader.rb:34:in `run'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:108:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/rails/rack/static.rb:31:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:47:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `each'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/rails/rack/log_tailer.rb:17:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/chunked.rb:15:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/handler/mongrel.rb:67:in `process'
+C:/Ruby187/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:159:in `process_client'
+C:/Ruby187/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:158:in `each'
+C:/Ruby187/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:158:in `process_client'
+C:/Ruby187/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+C:/Ruby187/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `initialize'
+C:/Ruby187/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `new'
+C:/Ruby187/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+C:/Ruby187/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `initialize'
+C:/Ruby187/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `new'
+C:/Ruby187/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `run'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/handler/mongrel.rb:38:in `run'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/commands/server.rb:111
+C:/Ruby187/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+C:/Ruby187/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+c:/Workspaces/workrails/KnowledgeBase/app/views/things/index.html.erb:11: syntax error, unexpected tASSOC, expecting kEND
+;  :imagem_check => 'unchecked' ; @output_buffer.concat "\n\t    "
+                   ^
+c:/Workspaces/workrails/KnowledgeBase/app/views/things/index.html.erb:13: syntax error, unexpected tASSOC, expecting kEND
+;  :imagem_check => 'checked' ; @output_buffer.concat "\n\t    "
+                   ^) on line #11 of app/views/things/index.html.erb:
+8: 	    <td><%=h thing.title %></td> 
+9: 	    
+10: 	    <% if thing.pending %>    
+11: 	    	<% :imagem_check => 'unchecked' %>
+12: 	    <% else %>
+13: 	    	<% :imagem_check => 'checked' %>
+14: 	    <% end %>
+
+    app/views/things/index.html.erb:37:in `compile!'
+    app/controllers/things_controller.rb:31:in `index'
+
+Rendered rescues/_trace (42.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 20:27:45) [GET]
+  [4;36;1mThing Load (1.0ms)[0m   [0;1mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+ERROR: compiling _run_erb_app47views47things47index46html46erb RAISED compile error
+c:/Workspaces/workrails/KnowledgeBase/app/views/things/index.html.erb:12: syntax error, unexpected tASSOC, expecting kEND
+	    	:imagem_check => 'unchecked'
+	    	                ^
+c:/Workspaces/workrails/KnowledgeBase/app/views/things/index.html.erb:14: syntax error, unexpected tASSOC, expecting kEND
+	    	:imagem_check => 'checked'
+	    	                ^
+Function body:           def _run_erb_app47views47things47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<h1>things</h1>\n\n"
+
+;  @things.each do |thing| ; @output_buffer.concat "\n\n<div id="
+
+; @output_buffer.concat(("div#{thing.id}").to_s); @output_buffer.concat ">\n\t<table border=1>\n\t  <tr>\n\t    <td>"
+
+
+; @output_buffer.concat((h thing.title ).to_s); @output_buffer.concat "</td> \n\t    \n\t    "
+
+;  
+	    if thing.pending     
+	    	:imagem_check => 'unchecked'
+	    else
+	    	:imagem_check => 'checked'
+	    end 
+	    ; @output_buffer.concat "\n\t  \n\t    "
+
+; @output_buffer.concat(( link_to_remote image_tag(:imagem_check+'.gif'), :update => "div#{thing.id}", :url =>{ :action => :check, :id => thing.id } ).to_s); @output_buffer.concat "\n\t    \n\t  </tr>\n\t  <tr>\n\t    <td>"
+
+
+
+; @output_buffer.concat((h thing.body ).to_s); @output_buffer.concat "</td>\n\t  </tr>\n\t    \n\t  <tr>\n\t    <td>"
+
+
+
+; @output_buffer.concat(( link_to image_tag('edit.gif'), edit_thing_path(thing) ).to_s); @output_buffer.concat "\n\t    "
+; @output_buffer.concat(( link_to image_tag('delete.gif'), thing, :confirm => 'Are you sure?', :method => :delete ).to_s); @output_buffer.concat "</td>\n\t  </tr>\n\t</table>  \n</div>\n"
+
+
+
+;  end ; @output_buffer.concat "\n\n\n<br />\n\n"
+
+
+
+
+; @output_buffer.concat(( link_to 'New thing', new_thing_path ).to_s); @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: c:/Workspaces/workrails/KnowledgeBase/app/views/things/index.html.erb:39:in `compile!'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/renderable.rb:61:in `compile'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/renderable.rb:28:in `render'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/template.rb:205:in `render_template'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:265:in `render'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:348:in `_render_with_layout'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:262:in `render'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1250:in `render_for_file'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:942:in `render_without_benchmark'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:51:in `render'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Ruby187/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:51:in `render'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:135:in `send'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:135
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:179:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:179:in `respond'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:173:in `each'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:173:in `respond'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:107:in `respond_to'
+c:/Workspaces/workrails/KnowledgeBase/app/controllers/things_controller.rb:31:in `index'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1331:in `send'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1331:in `perform_action_without_filters'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:617:in `call_filters'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Ruby187/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/flash.rb:151:in `perform_action'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `send'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `process_without_filters'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:606:in `process'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:391:in `process'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:386:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/routing/route_set.rb:438:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:87:in `dispatch'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:121:in `_call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:130
+C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:9:in `cache'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:28:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/string_coercion.rb:25:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/head.rb:9:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/params_parser.rb:15:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/session/cookie_store.rb:99:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/failsafe.rb:26:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `synchronize'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:114:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/reloader.rb:34:in `run'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:108:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/rails/rack/static.rb:31:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:47:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `each'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/rails/rack/log_tailer.rb:17:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/chunked.rb:15:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/handler/mongrel.rb:67:in `process'
+C:/Ruby187/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:159:in `process_client'
+C:/Ruby187/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:158:in `each'
+C:/Ruby187/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:158:in `process_client'
+C:/Ruby187/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+C:/Ruby187/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `initialize'
+C:/Ruby187/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `new'
+C:/Ruby187/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+C:/Ruby187/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `initialize'
+C:/Ruby187/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `new'
+C:/Ruby187/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `run'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/handler/mongrel.rb:38:in `run'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/commands/server.rb:111
+C:/Ruby187/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+C:/Ruby187/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+c:/Workspaces/workrails/KnowledgeBase/app/views/things/index.html.erb:12: syntax error, unexpected tASSOC, expecting kEND
+	    	:imagem_check => 'unchecked'
+	    	                ^
+c:/Workspaces/workrails/KnowledgeBase/app/views/things/index.html.erb:14: syntax error, unexpected tASSOC, expecting kEND
+	    	:imagem_check => 'checked'
+	    	                ^) on line #12 of app/views/things/index.html.erb:
+9: 	    
+10: 	    <% 
+11: 	    if thing.pending     
+12: 	    	:imagem_check => 'unchecked'
+13: 	    else
+14: 	    	:imagem_check => 'checked'
+15: 	    end 
+
+    app/views/things/index.html.erb:39:in `compile!'
+    app/controllers/things_controller.rb:31:in `index'
+
+Rendered rescues/_trace (104.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 20:28:02) [GET]
+  [4;35;1mThing Load (1.0ms)[0m   [0mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+ERROR: compiling _run_erb_app47views47things47index46html46erb RAISED compile error
+c:/Workspaces/workrails/KnowledgeBase/app/views/things/index.html.erb:12: syntax error, unexpected '=', expecting kEND
+	    	:imagem_check = 'unchecked'
+	    	               ^
+c:/Workspaces/workrails/KnowledgeBase/app/views/things/index.html.erb:14: syntax error, unexpected '=', expecting kEND
+	    	:imagem_check = 'checked'
+	    	               ^
+Function body:           def _run_erb_app47views47things47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<h1>things</h1>\n\n"
+
+;  @things.each do |thing| ; @output_buffer.concat "\n\n<div id="
+
+; @output_buffer.concat(("div#{thing.id}").to_s); @output_buffer.concat ">\n\t<table border=1>\n\t  <tr>\n\t    <td>"
+
+
+; @output_buffer.concat((h thing.title ).to_s); @output_buffer.concat "</td> \n\t    \n\t    "
+
+;  
+	    if thing.pending     
+	    	:imagem_check = 'unchecked'
+	    else
+	    	:imagem_check = 'checked'
+	    end 
+	    ; @output_buffer.concat "\n\t  \n\t    "
+
+; @output_buffer.concat(( link_to_remote image_tag(:imagem_check+'.gif'), :update => "div#{thing.id}", :url =>{ :action => :check, :id => thing.id } ).to_s); @output_buffer.concat "\n\t    \n\t  </tr>\n\t  <tr>\n\t    <td>"
+
+
+
+; @output_buffer.concat((h thing.body ).to_s); @output_buffer.concat "</td>\n\t  </tr>\n\t    \n\t  <tr>\n\t    <td>"
+
+
+
+; @output_buffer.concat(( link_to image_tag('edit.gif'), edit_thing_path(thing) ).to_s); @output_buffer.concat "\n\t    "
+; @output_buffer.concat(( link_to image_tag('delete.gif'), thing, :confirm => 'Are you sure?', :method => :delete ).to_s); @output_buffer.concat "</td>\n\t  </tr>\n\t</table>  \n</div>\n"
+
+
+
+;  end ; @output_buffer.concat "\n\n\n<br />\n\n"
+
+
+
+
+; @output_buffer.concat(( link_to 'New thing', new_thing_path ).to_s); @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: c:/Workspaces/workrails/KnowledgeBase/app/views/things/index.html.erb:39:in `compile!'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/renderable.rb:61:in `compile'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/renderable.rb:28:in `render'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/template.rb:205:in `render_template'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:265:in `render'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:348:in `_render_with_layout'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:262:in `render'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1250:in `render_for_file'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:942:in `render_without_benchmark'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:51:in `render'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Ruby187/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:51:in `render'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:135:in `send'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:135
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:179:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:179:in `respond'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:173:in `each'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:173:in `respond'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:107:in `respond_to'
+c:/Workspaces/workrails/KnowledgeBase/app/controllers/things_controller.rb:31:in `index'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1331:in `send'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1331:in `perform_action_without_filters'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:617:in `call_filters'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Ruby187/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/flash.rb:151:in `perform_action'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `send'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `process_without_filters'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:606:in `process'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:391:in `process'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:386:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/routing/route_set.rb:438:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:87:in `dispatch'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:121:in `_call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:130
+C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:9:in `cache'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:28:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/string_coercion.rb:25:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/head.rb:9:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/params_parser.rb:15:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/session/cookie_store.rb:99:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/failsafe.rb:26:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `synchronize'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:114:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/reloader.rb:34:in `run'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:108:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/rails/rack/static.rb:31:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:47:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `each'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/rails/rack/log_tailer.rb:17:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/chunked.rb:15:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/handler/mongrel.rb:67:in `process'
+C:/Ruby187/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:159:in `process_client'
+C:/Ruby187/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:158:in `each'
+C:/Ruby187/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:158:in `process_client'
+C:/Ruby187/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+C:/Ruby187/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `initialize'
+C:/Ruby187/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `new'
+C:/Ruby187/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+C:/Ruby187/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `initialize'
+C:/Ruby187/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `new'
+C:/Ruby187/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `run'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/handler/mongrel.rb:38:in `run'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/commands/server.rb:111
+C:/Ruby187/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+C:/Ruby187/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+c:/Workspaces/workrails/KnowledgeBase/app/views/things/index.html.erb:12: syntax error, unexpected '=', expecting kEND
+	    	:imagem_check = 'unchecked'
+	    	               ^
+c:/Workspaces/workrails/KnowledgeBase/app/views/things/index.html.erb:14: syntax error, unexpected '=', expecting kEND
+	    	:imagem_check = 'checked'
+	    	               ^) on line #12 of app/views/things/index.html.erb:
+9: 	    
+10: 	    <% 
+11: 	    if thing.pending     
+12: 	    	:imagem_check = 'unchecked'
+13: 	    else
+14: 	    	:imagem_check = 'checked'
+15: 	    end 
+
+    app/views/things/index.html.erb:39:in `compile!'
+    app/controllers/things_controller.rb:31:in `index'
+
+Rendered rescues/_trace (40.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 20:28:30) [GET]
+  [4;36;1mThing Load (0.0ms)[0m   [0;1mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+
+ActionView::TemplateError (undefined method `+' for :imagem_check:Symbol) on line #18 of app/views/things/index.html.erb:
+15: 	    end 
+16: 	    %>
+17: 	  
+18: 	    <%= link_to_remote image_tag(:imagem_check+'.gif'), :update => "div#{thing.id}", :url =>{ :action => :check, :id => thing.id } %>
+19: 	    
+20: 	  </tr>
+21: 	  <tr>
+
+    app/views/things/index.html.erb:18
+    app/views/things/index.html.erb:3:in `each'
+    app/views/things/index.html.erb:3
+    app/controllers/things_controller.rb:31:in `index'
+
+Rendered rescues/_trace (96.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 20:28:47) [GET]
+  [4;35;1mThing Load (1.0ms)[0m   [0mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Completed in 26ms (View: 19, DB: 1) | 200 OK [http://localhost/things]
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 20:30:18) [GET]
+  [4;36;1mThing Load (0.0ms)[0m   [0;1mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Completed in 17ms (View: 11, DB: 0) | 200 OK [http://localhost/things]
+
+
+Processing ThingsController#check (for 127.0.0.1 at 2010-08-31 20:30:20) [POST]
+  Parameters: {"authenticity_token"=>"02mHUb/6fRGhWKjc0fLBcSrsajDe71KMTcpJ3+SGMfI=", "id"=>"1", "_"=>""}
+  [4;35;1mThing Load (0.0ms)[0m   [0mSELECT * FROM "things" WHERE ("things"."id" = 1) [0m
+  [4;36;1mThing Update (1.0ms)[0m   [0;1mUPDATE "things" SET "updated_at" = '2010-08-31 23:30:20', "pending" = 'f' WHERE "id" = 1[0m
+Rendering template within layouts/application
+Rendering things/check
+Completed in 124ms (View: 21, DB: 1) | 200 OK [http://localhost/things/check/1]
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 20:30:23) [GET]
+  [4;35;1mThing Load (1.0ms)[0m   [0mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Completed in 17ms (View: 11, DB: 1) | 200 OK [http://localhost/things]
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 20:31:35) [GET]
+  [4;36;1mThing Load (0.0ms)[0m   [0;1mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Completed in 18ms (View: 11, DB: 0) | 200 OK [http://localhost/things]
+
+
+Processing ThingsController#check (for 127.0.0.1 at 2010-08-31 20:31:37) [POST]
+  Parameters: {"authenticity_token"=>"02mHUb/6fRGhWKjc0fLBcSrsajDe71KMTcpJ3+SGMfI=", "id"=>"3", "_"=>""}
+  [4;35;1mThing Load (0.0ms)[0m   [0mSELECT * FROM "things" WHERE ("things"."id" = 3) [0m
+  [4;36;1mThing Update (0.0ms)[0m   [0;1mUPDATE "things" SET "updated_at" = '2010-08-31 23:31:37', "pending" = 't' WHERE "id" = 3[0m
+Rendering template within layouts/application
+Rendering things/check
+Completed in 32ms (View: 12, DB: 0) | 200 OK [http://localhost/things/check/3]
+
+
+Processing ThingsController#check (for 127.0.0.1 at 2010-08-31 20:31:39) [POST]
+  Parameters: {"authenticity_token"=>"02mHUb/6fRGhWKjc0fLBcSrsajDe71KMTcpJ3+SGMfI=", "id"=>"3", "_"=>""}
+  [4;35;1mThing Load (0.0ms)[0m   [0mSELECT * FROM "things" WHERE ("things"."id" = 3) [0m
+  [4;36;1mThing Update (1.0ms)[0m   [0;1mUPDATE "things" SET "updated_at" = '2010-08-31 23:31:39', "pending" = 'f' WHERE "id" = 3[0m
+Rendering template within layouts/application
+Rendering things/check
+Completed in 71ms (View: 6, DB: 1) | 200 OK [http://localhost/things/check/3]
+
+
+Processing ThingsController#check (for 127.0.0.1 at 2010-08-31 20:31:41) [POST]
+  Parameters: {"authenticity_token"=>"02mHUb/6fRGhWKjc0fLBcSrsajDe71KMTcpJ3+SGMfI=", "id"=>"3", "_"=>""}
+  [4;35;1mThing Load (0.0ms)[0m   [0mSELECT * FROM "things" WHERE ("things"."id" = 3) [0m
+  [4;36;1mThing Update (1.0ms)[0m   [0;1mUPDATE "things" SET "updated_at" = '2010-08-31 23:31:41', "pending" = 't' WHERE "id" = 3[0m
+Rendering template within layouts/application
+Rendering things/check
+Completed in 77ms (View: 11, DB: 1) | 200 OK [http://localhost/things/check/3]
+
+
+Processing ThingsController#check (for 127.0.0.1 at 2010-08-31 20:31:42) [POST]
+  Parameters: {"authenticity_token"=>"02mHUb/6fRGhWKjc0fLBcSrsajDe71KMTcpJ3+SGMfI=", "id"=>"1", "_"=>""}
+  [4;35;1mThing Load (0.0ms)[0m   [0mSELECT * FROM "things" WHERE ("things"."id" = 1) [0m
+  [4;36;1mThing Update (0.0ms)[0m   [0;1mUPDATE "things" SET "updated_at" = '2010-08-31 23:31:42', "pending" = 't' WHERE "id" = 1[0m
+Rendering template within layouts/application
+Rendering things/check
+Completed in 33ms (View: 5, DB: 0) | 200 OK [http://localhost/things/check/1]
+
+
+Processing ThingsController#check (for 127.0.0.1 at 2010-08-31 20:31:44) [POST]
+  Parameters: {"authenticity_token"=>"02mHUb/6fRGhWKjc0fLBcSrsajDe71KMTcpJ3+SGMfI=", "id"=>"1", "_"=>""}
+  [4;35;1mThing Load (0.0ms)[0m   [0mSELECT * FROM "things" WHERE ("things"."id" = 1) [0m
+  [4;36;1mThing Update (1.0ms)[0m   [0;1mUPDATE "things" SET "updated_at" = '2010-08-31 23:31:44', "pending" = 'f' WHERE "id" = 1[0m
+Rendering template within layouts/application
+Rendering things/check
+Completed in 37ms (View: 6, DB: 1) | 200 OK [http://localhost/things/check/1]
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 20:33:52) [GET]
+  [4;35;1mThing Load (1.0ms)[0m   [0mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Completed in 24ms (View: 16, DB: 1) | 200 OK [http://localhost/things]
+
+
+Processing ThingsController#check (for 127.0.0.1 at 2010-08-31 20:33:55) [POST]
+  Parameters: {"authenticity_token"=>"02mHUb/6fRGhWKjc0fLBcSrsajDe71KMTcpJ3+SGMfI=", "id"=>"3", "_"=>""}
+  [4;36;1mThing Load (0.0ms)[0m   [0;1mSELECT * FROM "things" WHERE ("things"."id" = 3) [0m
+  [4;35;1mThing Update (1.0ms)[0m   [0mUPDATE "things" SET "updated_at" = '2010-08-31 23:33:55', "pending" = 'f' WHERE "id" = 3[0m
+Rendering template within layouts/application
+Rendering things/check
+Completed in 40ms (View: 18, DB: 1) | 200 OK [http://localhost/things/check/3]
+
+
+Processing ThingsController#check (for 127.0.0.1 at 2010-08-31 20:33:56) [POST]
+  Parameters: {"authenticity_token"=>"02mHUb/6fRGhWKjc0fLBcSrsajDe71KMTcpJ3+SGMfI=", "id"=>"3", "_"=>""}
+  [4;36;1mThing Load (0.0ms)[0m   [0;1mSELECT * FROM "things" WHERE ("things"."id" = 3) [0m
+  [4;35;1mThing Update (1.0ms)[0m   [0mUPDATE "things" SET "updated_at" = '2010-08-31 23:33:56', "pending" = 't' WHERE "id" = 3[0m
+Rendering template within layouts/application
+Rendering things/check
+Completed in 22ms (View: 6, DB: 1) | 200 OK [http://localhost/things/check/3]
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 20:43:33) [GET]
+  [4;36;1mThing Load (0.0ms)[0m   [0;1mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Completed in 22ms (View: 15, DB: 0) | 200 OK [http://localhost/things]
+
+
+Processing ThingsController#check (for 127.0.0.1 at 2010-08-31 20:43:41) [POST]
+  Parameters: {"authenticity_token"=>"02mHUb/6fRGhWKjc0fLBcSrsajDe71KMTcpJ3+SGMfI=", "id"=>"1", "_"=>""}
+  [4;35;1mThing Load (0.0ms)[0m   [0mSELECT * FROM "things" WHERE ("things"."id" = 1) [0m
+  [4;36;1mThing Update (1.0ms)[0m   [0;1mUPDATE "things" SET "updated_at" = '2010-08-31 23:43:41', "pending" = 't' WHERE "id" = 1[0m
+Rendering template within layouts/application
+Rendering things/check
+Completed in 77ms (View: 19, DB: 1) | 200 OK [http://localhost/things/check/1]
+
+
+Processing ThingsController#check (for 127.0.0.1 at 2010-08-31 20:43:43) [POST]
+  Parameters: {"authenticity_token"=>"02mHUb/6fRGhWKjc0fLBcSrsajDe71KMTcpJ3+SGMfI=", "id"=>"1", "_"=>""}
+  [4;35;1mThing Load (0.0ms)[0m   [0mSELECT * FROM "things" WHERE ("things"."id" = 1) [0m
+  [4;36;1mThing Update (0.0ms)[0m   [0;1mUPDATE "things" SET "updated_at" = '2010-08-31 23:43:43', "pending" = 'f' WHERE "id" = 1[0m
+Rendering template within layouts/application
+Rendering things/check
+Completed in 21ms (View: 6, DB: 0) | 200 OK [http://localhost/things/check/1]
+
+
+Processing ThingsController#check (for 127.0.0.1 at 2010-08-31 20:43:45) [POST]
+  Parameters: {"authenticity_token"=>"02mHUb/6fRGhWKjc0fLBcSrsajDe71KMTcpJ3+SGMfI=", "id"=>"3", "_"=>""}
+  [4;35;1mThing Load (0.0ms)[0m   [0mSELECT * FROM "things" WHERE ("things"."id" = 3) [0m
+  [4;36;1mThing Update (1.0ms)[0m   [0;1mUPDATE "things" SET "updated_at" = '2010-08-31 23:43:45', "pending" = 'f' WHERE "id" = 3[0m
+Rendering template within layouts/application
+Rendering things/check
+Completed in 69ms (View: 5, DB: 1) | 200 OK [http://localhost/things/check/3]
+
+
+Processing ThingsController#check (for 127.0.0.1 at 2010-08-31 20:43:46) [POST]
+  Parameters: {"authenticity_token"=>"02mHUb/6fRGhWKjc0fLBcSrsajDe71KMTcpJ3+SGMfI=", "id"=>"3", "_"=>""}
+  [4;35;1mThing Load (1.0ms)[0m   [0mSELECT * FROM "things" WHERE ("things"."id" = 3) [0m
+  [4;36;1mThing Update (1.0ms)[0m   [0;1mUPDATE "things" SET "updated_at" = '2010-08-31 23:43:46', "pending" = 't' WHERE "id" = 3[0m
+Rendering template within layouts/application
+Rendering things/check
+Completed in 24ms (View: 5, DB: 2) | 200 OK [http://localhost/things/check/3]
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 20:48:50) [GET]
+  [4;35;1mThing Load (1.0ms)[0m   [0mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Completed in 21ms (View: 14, DB: 1) | 200 OK [http://localhost/things]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 20:48:51) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/centro.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 20:48:51) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/acima.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 20:48:52) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/abaixo.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 20:51:18) [GET]
+  [4;36;1mThing Load (0.0ms)[0m   [0;1mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Completed in 21ms (View: 15, DB: 0) | 200 OK [http://localhost/things]
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 20:51:42) [GET]
+  [4;35;1mThing Load (0.0ms)[0m   [0mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Completed in 20ms (View: 11, DB: 0) | 200 OK [http://localhost/things]
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 20:53:37) [GET]
+  [4;36;1mThing Load (0.0ms)[0m   [0;1mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Completed in 17ms (View: 11, DB: 0) | 200 OK [http://localhost/things]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 20:53:50) [GET]
+
+ActionController::RoutingError (No route matches "/things/public/images/centro.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 20:54:38) [GET]
+
+ActionController::RoutingError (No route matches "/things/public/images/centro.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 20:54:49) [GET]
+
+ActionController::RoutingError (No route matches "/public/images/centro.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 20:54:57) [GET]
+
+ActionController::RoutingError (No route matches "/centro.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ThingsController#show to gif (for 127.0.0.1 at 2010-08-31 20:55:03) [GET]
+  Parameters: {"id"=>"centro"}
+
+ActionController::UnknownAction (No action responded to show. Actions: check, create, destroy, edit, index, new, and update):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 20:55:09) [GET]
+  [4;35;1mThing Load (1.0ms)[0m   [0mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Completed in 17ms (View: 11, DB: 1) | 200 OK [http://localhost/things]
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 21:01:21) [GET]
+  [4;36;1mThing Load (1.0ms)[0m   [0;1mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Completed in 17ms (View: 11, DB: 1) | 200 OK [http://localhost/things]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 21:01:22) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/centro.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 21:01:23) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/abaixo.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 21:02:04) [GET]
+  [4;35;1mThing Load (1.0ms)[0m   [0mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Completed in 17ms (View: 11, DB: 1) | 200 OK [http://localhost/things]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 21:02:06) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/centro.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 21:02:06) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/abajo.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 21:03:12) [GET]
+  [4;36;1mThing Load (1.0ms)[0m   [0;1mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Completed in 17ms (View: 11, DB: 1) | 200 OK [http://localhost/things]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 21:03:13) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/rails.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 21:03:13) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/abajo.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 21:07:31) [GET]
+  [4;35;1mThing Load (0.0ms)[0m   [0mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Completed in 71ms (View: 65, DB: 0) | 200 OK [http://localhost/things]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 21:07:33) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/rails.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 21:07:34) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/abajo.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 21:08:07) [GET]
+  [4;36;1mThing Load (0.0ms)[0m   [0;1mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Completed in 21ms (View: 14, DB: 0) | 200 OK [http://localhost/things]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 21:08:09) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/rails.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 21:08:10) [GET]
+
+ActionController::RoutingError (No route matches "/images/centro.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 21:08:10) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/abajo.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 21:10:45) [GET]
+  [4;35;1mThing Load (0.0ms)[0m   [0mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Completed in 26ms (View: 19, DB: 0) | 200 OK [http://localhost/things]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 21:10:46) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/rails.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 21:10:47) [GET]
+
+ActionController::RoutingError (No route matches "/images/centro.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 21:10:47) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/abajo.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 21:11:32) [GET]
+  [4;36;1mThing Load (1.0ms)[0m   [0;1mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Completed in 22ms (View: 16, DB: 1) | 200 OK [http://localhost/things]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 21:11:33) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/rails.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 21:11:34) [GET]
+
+ActionController::RoutingError (No route matches "/images/centro.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 21:11:34) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/abajo.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 21:12:07) [GET]
+  [4;35;1mThing Load (1.0ms)[0m   [0mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Completed in 20ms (View: 14, DB: 1) | 200 OK [http://localhost/things]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 21:12:08) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/rails.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 21:12:09) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/abajo.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 21:13:23) [GET]
+  [4;36;1mThing Load (1.0ms)[0m   [0;1mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Completed in 20ms (View: 11, DB: 1) | 200 OK [http://localhost/things]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 21:13:24) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/centro.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 21:13:25) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/arriba.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 21:13:25) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/abajo.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 21:13:42) [GET]
+  [4;35;1mThing Load (0.0ms)[0m   [0mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Completed in 21ms (View: 15, DB: 0) | 200 OK [http://localhost/things]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 21:13:43) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/centro.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 21:13:43) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/abajo.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 21:13:43) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/arriba.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 21:14:06) [GET]
+  [4;36;1mThing Load (1.0ms)[0m   [0;1mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Completed in 21ms (View: 14, DB: 1) | 200 OK [http://localhost/things]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 21:14:07) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/centro.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 21:14:08) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/arriba.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 21:14:08) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/abajo.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)

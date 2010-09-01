@@ -1,4 +1,11 @@
 class ThingsController < ApplicationController
+  
+  def check
+    @thing = Thing.find(params[:id])
+    @thing.pending = !@thing.pending
+    @thing.update_attributes(params[@thing])
+  end
+  
   # GET /things
   # GET /things.xml
   def index
@@ -7,17 +14,6 @@ class ThingsController < ApplicationController
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @things }
-    end
-  end
-
-  # GET /things/1
-  # GET /things/1.xml
-  def show
-    @thing = Thing.find(params[:id])
-
-    respond_to do |format|
-      format.html # show.html.erb
-      format.xml  { render :xml => @thing }
     end
   end
 

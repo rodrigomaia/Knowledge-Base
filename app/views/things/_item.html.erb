@@ -1,6 +1,8 @@
 	
-	<%= @thing.title %> 
-	<br />
+	<div class="titulo">
+		<%= @thing.title %> 
+	</div>
+	
 	<% 
 	if @thing.pending     
 		imagem_check = 'unchecked'
@@ -9,12 +11,19 @@
 	end 
 	%>
 	
-	<%= link_to_remote image_tag(imagem_check+'.gif'), :update => "div#{@thing.id}", :url =>{ :action => :check, :id => @thing.id } %>
-	<br />
-	<%= @thing.body %>
-	<br />
+	<div class="botao_check">
+		<%= link_to_remote image_tag(imagem_check+'.gif'), :update => "div#{@thing.id}", :url =>{ :action => :check, :id => @thing.id } %>
+	</div>
 	
+	<div class="quebra">
+		&nbsp;
+	</div>
 	
-	<%= link_to image_tag('edit.gif'), edit_thing_path(@thing) %>
-	<%= link_to image_tag('delete.gif'), @thing, :confirm => 'Confirma?', :method => :delete %>
-	<br />
+	<div class="corpo">
+		<%= @thing.body %>
+	</div>
+	
+	<div class="botoes">
+		<%= link_to image_tag('edit.gif'), edit_thing_path(@thing) %>
+		<%= link_to image_tag('delete.gif'), @thing, :confirm => 'Confirma?', :method => :delete %>
+	</div>

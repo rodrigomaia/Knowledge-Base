@@ -4512,3 +4512,1078 @@ ActionController::RoutingError (No route matches "/stylesheets/images/abajo.gif"
   
 
 Rendering rescues/layout (not_found)
+
+
+Processing ThingsController#new (for 127.0.0.1 at 2010-08-31 21:49:33) [GET]
+Rendering template within layouts/application
+Rendering things/new
+Rendered things/_cadastro (7.0ms)
+Completed in 19ms (View: 9, DB: 0) | 200 OK [http://localhost/things/new]
+
+
+Processing ThingsController#create (for 127.0.0.1 at 2010-08-31 21:49:50) [POST]
+  Parameters: {"commit"=>"Enviar", "authenticity_token"=>"02mHUb/6fRGhWKjc0fLBcSrsajDe71KMTcpJ3+SGMfI=", "thing"=>{"pending"=>"0", "body"=>"lkjfs]\r\nds~fkj\r\nsdfj\r\nasdfj\r\nasdjf\r\nasdjgafs\r\njg\r\nadfsçljg\r\nadsjfg\r\nçadfjg\r\nadfjlg\r\nçajdsf\r\ngçjadfs\r\ngjadf\r\nçgjadçfjgçladfjgçljadf\r\ngljadf\r\ngjaçdlfjgçladfsj\r\ngjlad\r\ngçljdafçlgjçladfjgçljadf", "title"=>"teste"}}
+  [4;36;1mThing Create (1.0ms)[0m   [0;1mINSERT INTO "things" ("pending", "created_at", "title", "body", "updated_at") VALUES('f', '2010-09-01 00:49:50', 'teste', 'lkjfs]
+ds~fkj
+sdfj
+asdfj
+asdjf
+asdjgafs
+jg
+adfsçljg
+adsjfg
+çadfjg
+adfjlg
+çajdsf
+gçjadfs
+gjadf
+çgjadçfjgçladfjgçljadf
+gljadf
+gjaçdlfjgçladfsj
+gjlad
+gçljdafçlgjçladfjgçljadf', '2010-09-01 00:49:50')[0m
+Redirected to http://localhost:3000/things
+Completed in 18ms (DB: 1) | 302 Found [http://localhost/things]
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 21:49:50) [GET]
+  [4;35;1mThing Load (1.0ms)[0m   [0mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Rendered things/_item (5.0ms)
+Rendered things/_item (4.0ms)
+Rendered things/_item (55.0ms)
+Completed in 74ms (View: 67, DB: 1) | 200 OK [http://localhost/things]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 21:49:52) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/centro.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 21:49:53) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/arriba.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 21:49:53) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/abajo.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ThingsController#destroy (for 127.0.0.1 at 2010-08-31 21:50:15) [DELETE]
+  Parameters: {"authenticity_token"=>"02mHUb/6fRGhWKjc0fLBcSrsajDe71KMTcpJ3+SGMfI=", "id"=>"1"}
+  [4;36;1mThing Load (0.0ms)[0m   [0;1mSELECT * FROM "things" WHERE ("things"."id" = 1) [0m
+  [4;35;1mThing Destroy (0.0ms)[0m   [0mDELETE FROM "things" WHERE "id" = 1[0m
+Redirected to http://localhost:3000/things
+Completed in 58ms (DB: 0) | 302 Found [http://localhost/things/1]
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 21:50:15) [GET]
+  [4;36;1mThing Load (0.0ms)[0m   [0;1mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Rendered things/_item (5.0ms)
+Rendered things/_item (4.0ms)
+Completed in 20ms (View: 13, DB: 0) | 200 OK [http://localhost/things]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 21:50:17) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/centro.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 21:50:17) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/arriba.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 21:50:18) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/abajo.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 21:53:03) [GET]
+  [4;35;1mThing Load (0.0ms)[0m   [0mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Rendered things/_item (4.0ms)
+Rendered things/_item (3.0ms)
+Completed in 18ms (View: 12, DB: 0) | 200 OK [http://localhost/things]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 21:53:04) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/centro.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 21:53:05) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/arriba.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 21:53:05) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/abajo.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 22:04:23) [GET]
+  [4;36;1mThing Load (0.0ms)[0m   [0;1mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Rendered things/_item (6.0ms)
+Rendered things/_item (4.0ms)
+Completed in 74ms (View: 67, DB: 0) | 200 OK [http://localhost/things]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 22:04:24) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/centro.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 22:04:25) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/arriba.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 22:04:26) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/abajo.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 22:05:16) [GET]
+  [4;35;1mThing Load (1.0ms)[0m   [0mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Rendered things/_item (6.0ms)
+Rendered things/_item (4.0ms)
+Completed in 26ms (View: 18, DB: 1) | 200 OK [http://localhost/things]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 22:05:17) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/centro.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 22:05:18) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/arriba.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 22:05:18) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/abajo.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 22:06:21) [GET]
+  [4;36;1mThing Load (1.0ms)[0m   [0;1mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Rendered things/_item (6.0ms)
+Rendered things/_item (4.0ms)
+Completed in 27ms (View: 16, DB: 1) | 200 OK [http://localhost/things]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 22:06:22) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/centro.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 22:06:23) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/arriba.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 22:06:23) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/abajo.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 22:08:01) [GET]
+  [4;35;1mThing Load (1.0ms)[0m   [0mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Rendered things/_item (6.0ms)
+Rendered things/_item (4.0ms)
+Completed in 73ms (View: 67, DB: 1) | 200 OK [http://localhost/things]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 22:08:03) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/centro.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 22:08:03) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/arriba.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 22:08:04) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/abajo.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ThingsController#check (for 127.0.0.1 at 2010-08-31 22:08:09) [POST]
+  Parameters: {"authenticity_token"=>"02mHUb/6fRGhWKjc0fLBcSrsajDe71KMTcpJ3+SGMfI=", "id"=>"3", "_"=>""}
+  [4;36;1mThing Load (0.0ms)[0m   [0;1mSELECT * FROM "things" WHERE ("things"."id" = 3) [0m
+  [4;35;1mThing Update (1.0ms)[0m   [0mUPDATE "things" SET "updated_at" = '2010-09-01 01:08:09', "pending" = 't' WHERE "id" = 3[0m
+Rendering template within layouts/application
+Rendering things/check
+Rendered things/_item (4.0ms)
+Completed in 23ms (View: 6, DB: 1) | 200 OK [http://localhost/things/check/3]
+
+
+Processing ThingsController#check (for 127.0.0.1 at 2010-08-31 22:08:11) [POST]
+  Parameters: {"authenticity_token"=>"02mHUb/6fRGhWKjc0fLBcSrsajDe71KMTcpJ3+SGMfI=", "id"=>"3", "_"=>""}
+  [4;36;1mThing Load (0.0ms)[0m   [0;1mSELECT * FROM "things" WHERE ("things"."id" = 3) [0m
+  [4;35;1mThing Update (0.0ms)[0m   [0mUPDATE "things" SET "updated_at" = '2010-09-01 01:08:11', "pending" = 'f' WHERE "id" = 3[0m
+Rendering template within layouts/application
+Rendering things/check
+Rendered things/_item (4.0ms)
+Completed in 23ms (View: 7, DB: 0) | 200 OK [http://localhost/things/check/3]
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 22:09:30) [GET]
+  [4;36;1mThing Load (0.0ms)[0m   [0;1mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Rendered things/_item (6.0ms)
+Rendered things/_item (3.0ms)
+Completed in 26ms (View: 20, DB: 0) | 200 OK [http://localhost/things]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 22:09:31) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/centro.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 22:09:32) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/arriba.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 22:09:32) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/abajo.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 22:10:05) [GET]
+  [4;35;1mThing Load (0.0ms)[0m   [0mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Rendered things/_item (4.0ms)
+Rendered things/_item (3.0ms)
+Completed in 22ms (View: 16, DB: 0) | 200 OK [http://localhost/things]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 22:10:06) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/centro.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 22:10:07) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/arriba.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 22:10:07) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/abajo.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 22:11:14) [GET]
+  [4;36;1mThing Load (1.0ms)[0m   [0;1mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Rendered things/_item (7.0ms)
+Rendered things/_item (3.0ms)
+Completed in 27ms (View: 21, DB: 1) | 200 OK [http://localhost/things]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 22:11:15) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/centro.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 22:11:16) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/arriba.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 22:11:16) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/abajo.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 22:11:33) [GET]
+  [4;35;1mThing Load (1.0ms)[0m   [0mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Rendered things/_item (5.0ms)
+Rendered things/_item (3.0ms)
+Completed in 23ms (View: 16, DB: 1) | 200 OK [http://localhost/things]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 22:11:34) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/centro.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 22:11:35) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/arriba.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 22:11:35) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/abajo.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 22:12:16) [GET]
+  [4;36;1mThing Load (0.0ms)[0m   [0;1mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Rendered things/_item (4.0ms)
+Rendered things/_item (3.0ms)
+Completed in 23ms (View: 17, DB: 0) | 200 OK [http://localhost/things]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 22:12:17) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/centro.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 22:12:18) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/arriba.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 22:12:18) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/abajo.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 22:13:54) [GET]
+  [4;35;1mThing Load (1.0ms)[0m   [0mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Rendered things/_item (5.0ms)
+Rendered things/_item (4.0ms)
+Completed in 25ms (View: 16, DB: 1) | 200 OK [http://localhost/things]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 22:13:56) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/centro.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 22:13:56) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/arriba.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 22:13:57) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/abajo.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 22:14:28) [GET]
+  [4;36;1mThing Load (1.0ms)[0m   [0;1mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Rendered things/_item (6.0ms)
+Rendered things/_item (4.0ms)
+Completed in 26ms (View: 19, DB: 1) | 200 OK [http://localhost/things]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 22:14:29) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/centro.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 22:14:30) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/arriba.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 22:14:30) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/abajo.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 22:14:46) [GET]
+  [4;35;1mThing Load (1.0ms)[0m   [0mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Rendered things/_item (4.0ms)
+Rendered things/_item (49.0ms)
+Completed in 68ms (View: 62, DB: 1) | 200 OK [http://localhost/things]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 22:14:47) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/centro.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 22:14:48) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/arriba.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 22:14:48) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/abajo.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 22:15:25) [GET]
+  [4;36;1mThing Load (0.0ms)[0m   [0;1mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Rendered things/_item (5.0ms)
+Rendered things/_item (3.0ms)
+Completed in 22ms (View: 16, DB: 0) | 200 OK [http://localhost/things]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 22:15:26) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/centro.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 22:15:27) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/arriba.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 22:15:27) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/abajo.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 22:15:37) [GET]
+  [4;35;1mThing Load (1.0ms)[0m   [0mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Rendered things/_item (5.0ms)
+Rendered things/_item (3.0ms)
+Completed in 22ms (View: 16, DB: 1) | 200 OK [http://localhost/things]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 22:15:37) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/centro.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 22:15:38) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/arriba.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 22:15:38) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/abajo.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 22:16:06) [GET]
+  [4;36;1mThing Load (1.0ms)[0m   [0;1mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Rendered things/_item (5.0ms)
+Rendered things/_item (4.0ms)
+Completed in 68ms (View: 61, DB: 1) | 200 OK [http://localhost/things]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 22:16:08) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/centro.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 22:16:09) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/arriba.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 22:16:09) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/abajo.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 22:16:26) [GET]
+  [4;35;1mThing Load (0.0ms)[0m   [0mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Rendered things/_item (6.0ms)
+Rendered things/_item (3.0ms)
+Completed in 25ms (View: 18, DB: 0) | 200 OK [http://localhost/things]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 22:16:27) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/centro.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 22:16:28) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/arriba.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 22:16:28) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/abajo.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 22:16:39) [GET]
+  [4;36;1mThing Load (0.0ms)[0m   [0;1mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Rendered things/_item (5.0ms)
+Rendered things/_item (3.0ms)
+Completed in 23ms (View: 16, DB: 0) | 200 OK [http://localhost/things]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 22:16:39) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/centro.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 22:16:40) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/arriba.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 22:16:40) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/abajo.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 22:16:57) [GET]
+  [4;35;1mThing Load (1.0ms)[0m   [0mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Rendered things/_item (49.0ms)
+Rendered things/_item (4.0ms)
+Completed in 71ms (View: 61, DB: 1) | 200 OK [http://localhost/things]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 22:16:58) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/centro.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 22:16:59) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/arriba.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 22:16:59) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/abajo.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 22:17:11) [GET]
+  [4;36;1mThing Load (0.0ms)[0m   [0;1mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Rendered things/_item (6.0ms)
+Rendered things/_item (4.0ms)
+Completed in 24ms (View: 17, DB: 0) | 200 OK [http://localhost/things]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 22:17:11) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/centro.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 22:17:12) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/arriba.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 22:17:12) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/abajo.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 22:18:58) [GET]
+  [4;35;1mThing Load (1.0ms)[0m   [0mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Rendered things/_item (4.0ms)
+Rendered things/_item (3.0ms)
+Completed in 23ms (View: 17, DB: 1) | 200 OK [http://localhost/things]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 22:18:59) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/centro.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 22:19:00) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/arriba.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 22:19:00) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/abajo.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 22:19:23) [GET]
+  [4;36;1mThing Load (1.0ms)[0m   [0;1mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Rendered things/_item (50.0ms)
+Rendered things/_item (3.0ms)
+Completed in 69ms (View: 62, DB: 1) | 200 OK [http://localhost/things]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 22:19:24) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/centro.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 22:19:25) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/arriba.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 22:19:25) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/abajo.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 22:19:33) [GET]
+  [4;35;1mThing Load (1.0ms)[0m   [0mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Rendered things/_item (5.0ms)
+Rendered things/_item (3.0ms)
+Completed in 25ms (View: 19, DB: 1) | 200 OK [http://localhost/things]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 22:19:34) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/centro.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 22:19:35) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/arriba.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 22:19:35) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/abajo.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 22:19:49) [GET]
+  [4;36;1mThing Load (0.0ms)[0m   [0;1mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Rendered things/_item (5.0ms)
+Rendered things/_item (4.0ms)
+Completed in 23ms (View: 17, DB: 0) | 200 OK [http://localhost/things]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 22:19:49) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/centro.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 22:19:50) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/arriba.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 22:19:50) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/abajo.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 22:21:14) [GET]
+  [4;35;1mThing Load (1.0ms)[0m   [0mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Rendered things/_item (5.0ms)
+Rendered things/_item (3.0ms)
+Completed in 72ms (View: 66, DB: 1) | 200 OK [http://localhost/things]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 22:21:15) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/centro.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 22:21:16) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/arriba.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 22:21:16) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/abajo.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 22:21:30) [GET]
+  [4;36;1mThing Load (1.0ms)[0m   [0;1mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Rendered things/_item (5.0ms)
+Rendered things/_item (4.0ms)
+Completed in 23ms (View: 16, DB: 1) | 200 OK [http://localhost/things]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 22:21:30) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/centro.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 22:21:31) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/arriba.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 22:21:31) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/abajo.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ThingsController#destroy (for 127.0.0.1 at 2010-08-31 22:21:39) [DELETE]
+  Parameters: {"authenticity_token"=>"02mHUb/6fRGhWKjc0fLBcSrsajDe71KMTcpJ3+SGMfI=", "id"=>"3"}
+  [4;35;1mThing Load (0.0ms)[0m   [0mSELECT * FROM "things" WHERE ("things"."id" = 3) [0m
+  [4;36;1mThing Destroy (0.0ms)[0m   [0;1mDELETE FROM "things" WHERE "id" = 3[0m
+Redirected to http://localhost:3000/things
+Completed in 16ms (DB: 0) | 302 Found [http://localhost/things/3]
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 22:21:39) [GET]
+  [4;35;1mThing Load (0.0ms)[0m   [0mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Rendered things/_item (6.0ms)
+Completed in 18ms (View: 12, DB: 0) | 200 OK [http://localhost/things]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 22:21:40) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/centro.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 22:21:41) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/arriba.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 22:21:41) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/abajo.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ThingsController#new (for 127.0.0.1 at 2010-08-31 22:21:47) [GET]
+Rendering template within layouts/application
+Rendering things/new
+Rendered things/_cadastro (54.0ms)
+Completed in 63ms (View: 57, DB: 0) | 200 OK [http://localhost/things/new]
+
+
+Processing ThingsController#create (for 127.0.0.1 at 2010-08-31 22:21:58) [POST]
+  Parameters: {"commit"=>"Enviar", "authenticity_token"=>"02mHUb/6fRGhWKjc0fLBcSrsajDe71KMTcpJ3+SGMfI=", "thing"=>{"pending"=>"1", "body"=>"~çlkfçldskfçlkds\r\ndskf\r\nskdf]ksdf~\r\nkds]fkds]fk]dskçlf", "title"=>"outra coisa"}}
+  [4;36;1mThing Create (1.0ms)[0m   [0;1mINSERT INTO "things" ("pending", "created_at", "title", "body", "updated_at") VALUES('t', '2010-09-01 01:21:58', 'outra coisa', '~çlkfçldskfçlkds
+dskf
+skdf]ksdf~
+kds]fkds]fk]dskçlf', '2010-09-01 01:21:58')[0m
+Redirected to http://localhost:3000/things
+Completed in 16ms (DB: 1) | 302 Found [http://localhost/things]
+
+
+Processing ThingsController#index (for 127.0.0.1 at 2010-08-31 22:21:58) [GET]
+  [4;35;1mThing Load (0.0ms)[0m   [0mSELECT * FROM "things" [0m
+Rendering template within layouts/application
+Rendering things/index
+Rendered things/_item (5.0ms)
+Rendered things/_item (4.0ms)
+Completed in 18ms (View: 12, DB: 0) | 200 OK [http://localhost/things]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 22:22:00) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/centro.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 22:22:01) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/arriba.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 22:22:01) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/abajo.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
